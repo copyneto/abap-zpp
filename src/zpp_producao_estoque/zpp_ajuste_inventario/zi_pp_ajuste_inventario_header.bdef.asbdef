@@ -1,0 +1,79 @@
+managed implementation in class zclpp_ajuste_inventario unique;
+
+define behavior for ZI_PP_AJUSTE_INVENTARIO_HEADER alias AjusteInventarioHdr
+persistent table ztpp_ajust_inv_h
+etag master LocalLastChangedAt
+lock master
+authorization master ( instance )
+{
+
+  update ( features : instance );
+  action ( features : instance ) finish result [1] $self;
+  action ( features : instance ) execute result [1] $self;
+
+  association _Item;
+
+  field ( numbering : managed ) documentoUuid;
+  field ( readonly : update ) DocumentNo, Plant, DateStart, DateEnd, Status, StatusCriticality;
+//  field ( readonly : update ) sumprice, sumquantity, sumtotalquantity, sumcounting, sumtotalcounting, sumbalance, sumtotalbalance;
+  field ( readonly : update ) CreatedBy, CreatedAt, LastChangedBy, LastChangedAt, LocalLastChangedAt;
+
+  mapping for ztpp_ajust_inv_h
+  {
+    documentouuid = DocumentoUUID;
+    documentno = DocumentNo;
+    idcontagem = IdContagem;
+    plant = Plant;
+    datestart = DateStart;
+    dateend = DateEnd;
+    docname = DocName;
+    description = Description;
+    Status = Status;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LastChangedBy = last_changed_by;
+    LastChangedAt = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+}
+
+define behavior for ZI_PP_AJUSTE_INVENTARIO_ITEM alias AjusteInventarioItem
+persistent table ztpp_ajust_inv_i
+lock dependent by _Header
+authorization dependent by _Header
+etag master LocalLastChangedAt
+{
+
+  update;
+  action ( features : instance ) message result [1] $self;
+
+  association _Header;
+
+  field ( numbering : managed ) DocumentoItemUUID;
+  field ( readonly ) DocumentoUUID, Material, Plant, StorageLocation, Batch, Price,
+  Currency, Quantity, Unit, TotalQuantity, Balance, TotalBalance, TotalCounting,
+  Accuracy, Percentage, Status, MaterialName, StatusCriticality;
+  field ( readonly ) CreatedBy, CreatedAt, LastChangedBy, LastChangedAt, LocalLastChangedAt;
+  field ( features : instance ) counting;
+
+  mapping for ztpp_ajust_inv_i
+  {
+    documentoitemuuid = DocumentoItemUUID;
+    documentouuid = DocumentoUUID;
+    material = Material;
+    plant = Plant;
+    storagelocation = StorageLocation;
+    batch = Batch;
+    price = Price;
+    currency = Currency;
+    quantity = Quantity;
+    unit = Unit;
+    counting = Counting;
+    Status = Status;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LastChangedBy = last_changed_by;
+    LastChangedAt = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+}

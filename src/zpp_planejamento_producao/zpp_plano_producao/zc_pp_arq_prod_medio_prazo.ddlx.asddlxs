@@ -1,0 +1,84 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: { typeName: 'Arquivo de Médio Prazo',
+                     typeNamePlural: 'Arquivos de Médio Prazo',
+                     title: { type: #STANDARD, value: 'line' } } }
+
+annotate view ZC_PP_ARQ_PROD_MEDIO_PRAZO with
+{
+  // ------------------------------------------------------
+  // Header information
+  // ------------------------------------------------------
+  @UI.facet: [ { id:            'ArqMedioPrazo',
+                 purpose:       #STANDARD,
+                 type:          #IDENTIFICATION_REFERENCE,
+                 label:         'Arquivo Médio Prazo',
+                 position:      10 }  ]
+
+  // ------------------------------------------------------
+  // Field information
+  // ------------------------------------------------------
+  @UI.hidden: true
+  Id;
+
+  @UI: { lineItem:        [ { position: 10, label: 'Linha' } ],
+         identification:  [ { position: 10, label: 'Linha' } ]  }
+  Line;
+
+  @UI: { lineItem:        [ { position: 20, label: 'Material' } ],
+         identification:  [ { position: 20, label: 'Material' } ]  }
+  Material;
+  
+  @UI.hidden: true
+  MaterialName;
+
+  @UI: { lineItem:        [ { position: 30, label: 'Centro' } ],
+         identification:  [ { position: 30, label: 'Centro' } ]  }
+  Plant;
+  
+  @UI.hidden: true
+  PlantName;
+
+  @UI: { lineItem:        [ { position: 40, label: 'Nº Versão' } ],
+         identification:  [ { position: 40, label: 'Nº Versão' } ]  }
+  Version;
+
+  @UI: { lineItem:        [ { position: 50, label: 'Versão ativa' } ],
+         identification:  [ { position: 50, label: 'Versão ativa' } ]  }
+  VersActivName;
+
+  @UI: { lineItem:        [ { position: 60, label: 'Tipo data' } ],
+         identification:  [ { position: 60, label: 'Tipo data' } ]  }
+  DateType;
+
+  @UI: { lineItem:        [ { position: 70, label: 'Data planejada' } ],
+         identification:  [ { position: 70, label: 'Data planejada' } ]  }
+  ReqDate;
+
+  @UI: { lineItem:        [ { position: 80, label: 'Quantidade planejada' } ],
+         identification:  [ { position: 80, label: 'Quantidade planejada' } ]  }
+  ReqQty;
+
+  @UI: { lineItem:        [ { position: 90, label: 'Nº de série' } ],
+         identification:  [ { position: 90, label: 'Nº de série' } ]  }
+  BomExpl;
+
+  @UI: { lineItem:        [ { position: 100, label: 'Versão de produção' } ],
+         identification:  [ { position: 100, label: 'Versão de produção' } ]  }
+  ProdVes;
+  
+  @UI.hidden: true                                     
+  CreatedBy;
+ 
+  @UI.hidden: true
+  CreatedAt;
+
+  @UI.hidden: true
+  LastChangedBy;
+
+  @UI.hidden: true
+  LastChangedAt;
+
+  @UI.hidden: true
+  LocalLastChangedAt;
+
+}

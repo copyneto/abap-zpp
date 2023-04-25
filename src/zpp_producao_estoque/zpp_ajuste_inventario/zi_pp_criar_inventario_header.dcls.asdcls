@@ -1,0 +1,11 @@
+@EndUserText.label: 'CDS de Autorização'
+@MappingRole: true
+define role ZI_PP_CRIAR_INVENTARIO_HEADER {
+    grant
+        select
+            on
+                ZI_PP_CRIAR_INVENTARIO_HEADER
+                    where
+                       ( Plant ) = aspect pfcg_auth( ZPPWERKS, WERKS, ACTVT = '03' );
+                        
+}

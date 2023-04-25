@@ -1,0 +1,19 @@
+projection;
+
+define behavior for ZC_PP_AJUSTE_INVENTARIO_HEADER alias AjusteInventarioHdr
+{
+
+  use update;
+  use action finish;
+  use action execute;
+
+  use association _Item;
+}
+
+define behavior for ZC_PP_AJUSTE_INVENTARIO_ITEM alias AjusteInventarioItem
+{
+  use update;
+  use action message;
+
+  use association _Header;
+}

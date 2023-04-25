@@ -1,0 +1,7 @@
+@EndUserText.label: 'Service Definition Ajuste de Inventário'
+define service ZUI_AJUSTE_INVENTARIO {
+  expose ZC_PP_AJUSTE_INVENTARIO_HEADER;
+  expose ZC_PP_AJUSTE_INVENTARIO_ITEM;
+  expose ZI_PP_AJUSTE_INVENTARIO_TOTALS;
+  expose ZI_PP_AJUSTE_INVENTARIO_MSG;
+}

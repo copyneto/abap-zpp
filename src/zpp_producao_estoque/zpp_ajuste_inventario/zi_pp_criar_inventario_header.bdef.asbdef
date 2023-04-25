@@ -1,0 +1,81 @@
+managed implementation in class zclpp_criar_inventario unique;
+
+define behavior for ZI_PP_CRIAR_INVENTARIO_HEADER alias CriarInventarioHdr
+persistent table ztpp_ajust_inv_h
+lock master
+authorization master ( instance )
+etag master LocalLastChangedAt
+{
+  create;
+  update;
+  delete ( features : instance );
+
+  //  association _Item { create (features:instance); }
+  association _Item { internal create; }
+  field ( numbering : managed ) documentoUuid;
+  field ( readonly ) DocumentNo, LastChangedAt, LastChangedBy, CreatedAt, CreatedBy, LocalLastChangedAt;
+  field ( mandatory : create ) Plant, DateStart, DateEnd;
+  field ( readonly : update ) Plant, DateStart, DateEnd;
+  validation verificaDocumento  on  save { create; }
+  validation validarDatas on save { field DateStart, DateEnd; create; update; }
+  validation dadosDeSelecao on save { create; }
+  validation authorityCreate on save { create; }
+
+  determination calcularDocumentNo  on modify  { create; }
+
+  mapping for ztpp_ajust_inv_h
+  {
+
+    documentoUuid = documentouuid;
+    documentno = DocumentNo;
+    idcontagem = IdContagem;
+    plant = Plant;
+    datestart = DateStart;
+    dateend = DateEnd;
+    docname = DocName;
+    description = Description;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LastChangedBy = last_changed_by;
+    LastChangedAt = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+}
+
+define behavior for ZI_PP_CRIAR_INVENTARIO_ITEM alias CriarInventarioItem
+persistent table ztpp_ajust_inv_i
+lock dependent by _Header
+authorization dependent by _Header
+etag master LocalLastChangedAt
+{
+  association _Header;
+  update;
+
+  field (  features : instance ) counting;
+  field ( numbering : managed ) documentoitemuuid;
+  field ( readonly ) documentouuid, LastChangedAt, LastChangedBy, CreatedAt, CreatedBy, LocalLastChangedAt;
+  field ( readonly : update ) material, StorageLocation, plant, Batch;
+  field ( readonly : update ) Price, Currency, Quantity, Unit, Balance, status;
+  action ( features : instance ) mensagens result [1] $self;
+
+  mapping for ztpp_ajust_inv_i
+  {
+    documentoItemUuid = documentoitemuuid;
+    documentoUuid = documentouuid;
+    material = Material;
+    plant = Plant;
+    storagelocation = StorageLocation;
+    batch = Batch;
+    price = Price;
+    currency = Currency;
+    quantity = Quantity;
+    unit = Unit;
+    counting = Counting;
+    status = status;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LastChangedBy = last_changed_by;
+    LastChangedAt = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+}

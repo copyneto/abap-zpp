@@ -1,0 +1,4 @@
+@EndUserText.label: 'Receita Mestre por Material'
+define service ZUI_PP_RECEITA_MESTRE {
+  expose ZC_PP_RECEITA_MESTRE;
+}

@@ -1,0 +1,129 @@
+managed implementation in class zclpp_nrm_apr unique;
+
+define behavior for ZI_PP_NRM_APR_H alias Header
+persistent table ztpp_nrm_apr_h
+lock master
+authorization master ( instance )
+etag master LastChangedAt
+{
+  create;
+  update ( features : instance );
+  delete ( features : instance );
+  association _Consumo { create; }
+  association _Ordens { create; }
+
+  field ( numbering : managed ) DocUuidH;
+  field ( readonly ) Status, DocumentNo, LastChangedAt, LastChangedBy, CreatedAt, CreatedBy, LocalLastChangedAt;
+
+  validation authorityCreate on save { create; }
+
+  determination calcularDocumentNo on modify { create; }
+  determination atualizaEntidade on save { create; update; }
+
+  action ( features : instance ) encerrar result [1] $self;
+  action ( features : instance ) imprimir parameter ZC_PP_NRM_APR_PRINTER;
+
+  mapping for ztpp_nrm_apr_h
+  {
+    DocUuidH = doc_uuid_h;
+    documentno = documentno;
+    plant = Plant;
+    docname = DocName;
+    OrderType = order_type;
+    BasicStartDate = basic_start_date;
+    Status = Status;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LastChangedBy = last_changed_by;
+    LastChangedAt = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+}
+
+define behavior for ZI_PP_NRM_APR_CON alias Consumo
+implementation in class zclpp_nrm_apr_con unique
+persistent table ztpp_nrm_apr_con
+lock dependent by _H
+authorization dependent by _H
+etag master LastChangedAt
+{
+
+  association _H;
+  update ( features : instance );
+  delete ( features : instance );
+  field ( readonly : update ) DocUuidH;
+  field ( numbering : managed ) DocUuidConsumo;
+  field ( readonly ) Status, Plant, LastChangedAt, LastChangedBy, CreatedAt, CreatedBy, LocalLastChangedAt;
+
+//  action ( features : instance ) executar result [1] $self;
+
+  determination onCreateCons on modify { create; }
+  validation verificaStatus on save { create; }
+
+  mapping for ztpp_nrm_apr_con
+  {
+    DocUuidH = doc_uuid_h;
+    DocUuidConsumo = doc_uuid_consumo;
+    Material = material;
+    plant = Plant;
+    StgeLoc = stge_loc;
+    Batch = batch;
+    EntryQnt = entry_qnt;
+    EntryUom = entry_uom;
+    Status = Status;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LastChangedBy = last_changed_by;
+    LastChangedAt = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+
+}
+
+define behavior for ZI_PP_NRM_APR_ORD alias Ordem
+implementation in class zclpp_nrm_apr_ord unique
+persistent table ztpp_nrm_apr_ord
+lock dependent by _H
+authorization dependent by _H
+etag master LastChangedAt
+{
+
+  association _H;
+
+  update ( features : instance );
+  delete ( features : instance );
+  field ( readonly : update ) DocUuidH;
+  field ( numbering : managed ) DocUuidOrdem;
+  field ( readonly ) Status, QuantityConfirmed, ProcessOrder, Plant, Percentage, BasicStartDate,
+  OrderType, LastChangedAt, LastChangedBy,
+  CreatedAt, CreatedBy, LocalLastChangedAt;
+
+  determination onCreateorder on modify { create; }
+
+  action ( features : instance ) ordens result [1..*] ZI_PP_NRM_APR_ORD;
+
+  validation verificaMaterial on save { field Material; create; update; }
+  validation verificaStatus on save { create; }
+
+
+  mapping for ztpp_nrm_apr_ord
+  {
+    DocUuidH = doc_uuid_h;
+    DocUuidOrdem = doc_uuid_ordem;
+    ProcessOrder = order_number;
+    Material = material;
+    plant = Plant;
+    OrderType = order_type;
+    BasicStartDate = basic_start_date;
+    Quantity = quantity;
+    QuantityUom = quantity_uom;
+    Percentage = percentage;
+    Status = Status;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LastChangedBy = last_changed_by;
+    LastChangedAt = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+    ProdVersion = prod_version;
+  }
+}

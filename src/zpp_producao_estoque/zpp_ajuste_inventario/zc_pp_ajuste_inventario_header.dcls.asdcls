@@ -1,0 +1,11 @@
+@EndUserText.label: 'CDS de Autorização'
+@MappingRole: true
+define role ZC_PP_AJUSTE_INVENTARIO_HEADER {
+    grant
+        select
+            on
+                ZC_PP_AJUSTE_INVENTARIO_HEADER
+                    where
+                        inheriting conditions from entity ZI_PP_AJUSTE_INVENTARIO_HEADER;
+                        
+}

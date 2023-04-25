@@ -1,0 +1,52 @@
+@Metadata.layer: #CORE
+annotate view ZC_PP_AJUSTE_INVENTARIO_ITEM with
+{
+  @UI.lineItem: [{position: 05, type: #FOR_ACTION, dataAction: 'message', label: 'Log Mensagens', criticality: 'StatusCriticality'}]
+  DocumentoItemUUID;
+  //  DocumentNo;
+  //  ItemNo;
+  @UI.lineItem: [{position: 10 }]
+  Material;
+  @UI.lineItem: [{position: 20 }]
+  Plant;
+  @UI.lineItem: [{position: 30 }]
+  StorageLocation;
+  @UI.lineItem: [{position: 40 }] 
+  Batch;
+  //  @UI.lineItem: [{position: 50 }]
+  //  Price;
+  //  @UI.lineItem: [{position: 60 }]
+  //  Currency;
+  @UI.lineItem: [{position: 70 }]
+  Quantity;
+  //  @UI.lineItem: [{position: 80 }]
+  //  Unit;
+  @UI.lineItem: [{position: 90 }]
+  TotalQuantity;
+  @UI.lineItem: [{position: 100 }]
+  Counting;
+  @UI.lineItem: [{position: 110 }]
+  TotalCounting;
+  @UI.lineItem: [{position: 120 }]
+  Balance;
+  @UI.lineItem: [{position: 130 }]
+  TotalBalance;
+  @UI.lineItem: [{position: 140 }]
+  Accuracy;
+  @UI.lineItem: [{position: 150, criticality: 'StatusCriticality'}]
+  @UI.textArrangement: #TEXT_ONLY
+  Status;
+  //  CreatedBy;
+  //  CreatedAt;
+  //  LastChangedBy;
+  //  LastChangedAt;
+  //  LocalLastChangedAt;
+  //  /* Associations */
+  //  _Header;
+  //  _Material;
+  //  _MaterialText;
+  //  _Messages;
+  //  _MRPController;
+  //  _Plant;
+  //  _StorageLocation;
+}

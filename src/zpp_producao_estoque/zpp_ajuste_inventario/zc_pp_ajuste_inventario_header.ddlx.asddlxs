@@ -1,0 +1,95 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: { typeNamePlural: 'Documentos de Contagem' , typeName: 'Documento de Contagem',
+  title: { type: #STANDARD, value: 'DocName' },
+  description: { type: #STANDARD, value: 'DocumentNo' } }
+annotate view ZC_PP_AJUSTE_INVENTARIO_HEADER with
+{
+
+  @UI.facet: [
+    /* Header Facets */
+    { purpose: #HEADER,
+      position: 10,
+      type: #DATAPOINT_REFERENCE,
+      targetQualifier: 'StatusData' },
+
+    /* Standard Facets */
+    { label: 'Informações Gerais',
+      id: 'GeneralInfo',
+      type: #COLLECTION,
+      position: 10 },
+
+    // field group 'Geral' com todos indentification fields
+    { label: 'Geral',
+      purpose: #STANDARD,
+      position: 10,
+      type: #IDENTIFICATION_REFERENCE,
+      parentId: 'GeneralInfo' },
+
+    // field group 'Datas'
+    { label: 'Datas',
+      purpose: #STANDARD,
+      position: 20,
+      type: #FIELDGROUP_REFERENCE,
+      parentId: 'GeneralInfo',
+      targetQualifier: 'DatesGroup' },
+
+    // field group 'Comentário'
+    { label: 'Comentário',
+      purpose: #STANDARD,
+      position: 30,
+      type: #FIELDGROUP_REFERENCE,
+      parentId: 'GeneralInfo',
+      targetQualifier: 'CommentsGroup' },
+
+    // Totais
+    { id: 'Totals',
+      label: 'Totais',
+      purpose: #STANDARD,
+      position: 20,
+      type: #LINEITEM_REFERENCE,
+      targetElement: '_Totals' },
+
+    // Itens
+    { id: 'Item',
+      label: 'Itens',
+      purpose: #STANDARD,
+      position: 20,
+      type: #LINEITEM_REFERENCE,
+      targetElement: '_Item' }
+  ]
+
+  @UI.identification: [{ type: #FOR_ACTION,  dataAction: 'execute' , label: 'Executar movimentos' , position: 10 } ]
+  @UI.lineItem: [{position: 05, type: #FOR_ACTION,  dataAction: 'finish' , label: 'Encerrar documento' }]
+  DocumentoUUID;
+  @UI.selectionField: [{position: 20 }]
+  @UI.lineItem: [{position: 10}]
+  DocumentNo;
+  @UI.selectionField: [{position: 10}]
+  @UI.identification: [{position: 30 }]
+  @UI.lineItem: [{position: 30 }]
+  Plant;
+  @UI.identification: [{position: 10 }]
+  DocName;
+  @UI.lineItem: [{position: 40 }]
+  @UI.identification: [{position: 20 }]
+  IdContagem;
+  @UI.lineItem: [{position: 50 }]
+  CreatedBy;
+  @UI.selectionField: [{position: 20 }]
+  @UI.lineItem: [{position: 70, criticality: 'StatusCriticality' }]
+  @UI.textArrangement: #TEXT_ONLY
+  @UI.dataPoint:{ qualifier: 'StatusData', title: 'Status', criticality: 'StatusCriticality' }
+  Status;
+  @UI.hidden: true
+  StatusCriticality;
+  @UI.fieldGroup: [{qualifier: 'DatesGroup', position: 10 }]
+  DateStart;
+  @UI.fieldGroup: [{qualifier: 'DatesGroup', position: 20 }]
+  DateEnd;
+  @UI.fieldGroup: [{qualifier: 'DatesGroup', position: 30 }]
+  CreatedAt;
+  @UI.fieldGroup: [{qualifier: 'CommentsGroup', position: 10 }]
+  @UI.multiLineText: true
+  Description;
+
+}

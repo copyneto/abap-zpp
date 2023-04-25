@@ -1,0 +1,87 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: { typeName: 'Arquivo de Curto Prazo',
+                     typeNamePlural: 'Arquivos de Curto Prazo',
+                     title: { type: #STANDARD, value: 'line' } } }
+                     
+annotate view ZC_PP_ARQ_PROD_CURTO_PRAZO
+    with 
+{
+  // ------------------------------------------------------
+  // Header information
+  // ------------------------------------------------------
+  @UI.facet: [ { id:            'ArqCurtoPrazo',
+                 purpose:       #STANDARD,
+                 type:          #IDENTIFICATION_REFERENCE,
+                 label:         'Arquivo Curto Prazo',
+                 position:      10 }  ]
+
+  // ------------------------------------------------------
+  // Field information
+  // ------------------------------------------------------
+  @UI.hidden: true
+  Id;
+  
+  @UI: { lineItem:        [ { position: 10, label: 'Linha' } ],
+         identification:  [ { position: 10, label: 'Linha' } ]  }
+  Line;
+  
+  @UI: { lineItem:        [ { position: 20, label: 'Perfil da Ordem Planejada' } ],
+         identification:  [ { position: 20, label: 'Perfil da Ordem Planejada' } ]  }
+  PldordProfile;
+  
+  @UI: { lineItem:        [ { position: 30, label: 'Material' } ],
+         identification:  [ { position: 30, label: 'Material' } ]  }
+  Material;
+  
+  @UI.hidden: true
+  MaterialName;
+  
+  @UI: { lineItem:        [ { position: 40, label: 'Centro de Planejamento' } ],
+         identification:  [ { position: 40, label: 'Centro de Planejamento' } ]  }
+  PlanPlant;
+  
+  @UI.hidden: true
+  PlanPlantName;
+  
+  @UI: { lineItem:        [ { position: 50, label: 'Centro de Produção' } ],
+         identification:  [ { position: 50, label: 'Centro de Produção' } ]  }
+  ProdPlant;
+  
+  @UI.hidden: true
+  ProdPlantName;
+  
+  @UI: { lineItem:        [ { position: 60, label: 'Qtde. total da Ordem Planejada' } ],
+         identification:  [ { position: 60, label: 'Qtde. total da Ordem Planejada' } ]  }
+  TotalPlordQty;
+  
+  @UI.hidden: true
+  Unit;
+  
+  @UI: { lineItem:        [ { position: 70, label: 'Data Início da Ordem Planejada' } ],
+         identification:  [ { position: 70, label: 'Data Início da Ordem Planejada' } ]  }
+  OrderStartDate;
+  
+  @UI: { lineItem:        [ { position: 80, label: 'Código de fixação' } ],
+         identification:  [ { position: 80, label: 'Código de fixação' } ]  }
+  FirmingInd;
+  
+  @UI: { lineItem:        [ { position: 90, label: 'Nº Versão' } ],
+         identification:  [ { position: 90, label: 'Nº Versão' } ]  }
+  Version;
+
+  @UI.hidden: true                                     
+  CreatedBy;
+ 
+  @UI.hidden: true
+  CreatedAt;
+
+  @UI.hidden: true
+  LastChangedBy;
+
+  @UI.hidden: true
+  LastChangedAt;
+
+  @UI.hidden: true
+  LocalLastChangedAt;
+    
+}

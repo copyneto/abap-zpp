@@ -1,0 +1,11 @@
+@EndUserText.label: 'CDS de Autorização'
+@MappingRole: true
+define role ZC_PP_LOG_ORDENS_PRODUCAO {
+    grant
+        select
+            on
+                ZC_PP_LOG_ORDENS_PRODUCAO
+                where
+                    inheriting conditions from entity ZI_PP_LOG_ORDENS_PRODUCAO;
+                        
+}

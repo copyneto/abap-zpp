@@ -1,0 +1,7 @@
+@EndUserText.label: 'Service Definition - Criar Inventário'
+define service ZUI_CRIAR_INVENTARIO {
+  expose ZC_PP_CRIAR_INVENTARIO_HEADER;
+  expose ZC_PP_CRIAR_INVENTARIO_ITEM;
+  expose ZI_PP_AJUSTE_INVENTARIO_MSG;
+  expose I_MaterialText;
+}

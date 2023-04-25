@@ -1,0 +1,49 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: { title: { type: #STANDARD, label: 'Log Ordens', value: 'ZLogNo' },
+                     typeName: 'Relatório Log Ordens Produção',
+                     typeNamePlural: 'Log Ordens Produções' },
+
+       presentationVariant: [{ sortOrder: [{ by: 'ZLogNo', direction:  #ASC } ] }]}
+annotate view ZC_PP_LOG_ORDENS_PRODUCAO with
+{
+  // ------------------------------------------------------
+  // Informações de campo
+  // ------------------------------------------------------
+
+  @UI: {  lineItem:       [ { position: 10 } ],
+          identification: [ { position: 10 } ] }
+  ZLogNo;
+  @UI: {  lineItem:       [ { position: 20 } ],
+          identification: [ { position: 20 } ],
+          selectionField: [ { position: 20 } ] }
+  ManufacturingOrder;
+  @UI: {  lineItem:       [ { position: 30 } ],
+          identification: [ { position: 30 } ],
+          selectionField: [ { position: 30 } ] }
+  Material;
+  @UI: {  lineItem:       [ { position: 40 } ],
+          identification: [ { position: 40 } ],
+          selectionField: [ { position: 40 } ] }
+  Confirmacao;
+  @UI: {  lineItem:       [ { position: 50 } ],
+          identification: [ { position: 50 } ],
+          selectionField: [ { position: 50 } ] }
+  Contador;
+  @UI: {  lineItem:       [ { position: 60, label: 'Centro' } ],
+          identification: [ { position: 60, label: 'Centro' } ],
+          selectionField: [ { position: 60 } ] }
+  ProdPlant;
+  @UI: {  lineItem:       [ { position: 70, label: 'Data Criação' } ],
+          identification: [ { position: 70, label: 'Data Criação' } ],
+          selectionField: [ { position: 70 } ] }
+  DateCr;
+  @UI: {  lineItem:       [ { position: 80, label: 'Hora Criação' } ],
+          identification: [ { position: 80, label: 'Hora Criação' } ] }
+  CreatedAt;
+  @UI: {  lineItem:       [ { position: 90, label: 'Dados MES' } ],
+          identification: [ { position: 90, label: 'Dados MES' } ] }
+  ZRecivMes;
+  @UI: {  lineItem:       [ { position: 100, label: 'Log BAPI' } ],
+          identification: [ { position: 100, label: 'Log BAPI' } ] }
+  ZMsgMes;
+}

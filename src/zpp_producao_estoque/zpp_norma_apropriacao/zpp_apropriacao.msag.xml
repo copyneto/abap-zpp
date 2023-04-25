@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZPP_APROPRIACAO</ARBGB>
+    <MASTERLANG>P</MASTERLANG>
+    <STEXT>Norma de Apropriação Graos Verde</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPP_APROPRIACAO</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp;1 &amp;2 &amp;3 &amp;4</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPP_APROPRIACAO</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Material &amp;1 já utilizado, favor verificar</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPP_APROPRIACAO</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Não é possivel inserir novas linhas, processamento iniciado</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPP_APROPRIACAO</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Documento &amp;1 criado!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPP_APROPRIACAO</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Não é possivel inserir novas linhas, documento encerrado</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPP_APROPRIACAO</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Ordem sem lançamento!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPP_APROPRIACAO</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Ordem recursiva!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPP_APROPRIACAO</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Consumo do material não está processado!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPP_APROPRIACAO</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Documento encerrado!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPP_APROPRIACAO</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Quantidade de Consumo não encontrada</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPP_APROPRIACAO</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Quantidade da Ordem não encontrada</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPP_APROPRIACAO</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>Quantidade despejada não é igual a quantidade do rendimento</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

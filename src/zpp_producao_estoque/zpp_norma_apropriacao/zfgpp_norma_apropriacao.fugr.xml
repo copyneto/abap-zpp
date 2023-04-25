@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Rotinas para o APP-Norma de Apropriação</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFGPP_NORMA_APROPRIACAOTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFGPP_NORMA_APROPRIACAO</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFMPP_NRM_APR_ENCERRAMENTO</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Norma de Apropriação-Encerramento</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_DOC_UUID_H</PARAMETER>
+       <TYP>ZTPP_NRM_APR_H-DOC_UUID_H</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_DOC_UUID_H</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFMPP_NRM_APR_GRAOS_CONSUMIDOS</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Norma de Apropriação-Grãos Consumidos</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_DOC_UUID_H</PARAMETER>
+       <TYP>ZTPP_NRM_APR_H-DOC_UUID_H</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_DOC_UUID_CONSUMO</PARAMETER>
+       <TYP>ZTPP_NRM_APR_CON-DOC_UUID_CONSUMO</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <TYP>BAPIRET2_T</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_DOC_UUID_H</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_DOC_UUID_CONSUMO</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFMPP_NRM_APR_PRODUCAO_GRAOS</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Norma de Apropriação-Produção de Grãos</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_DOC_UUID_H</PARAMETER>
+       <TYP>ZTPP_NRM_APR_H-DOC_UUID_H</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_DOC_UUID_H</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

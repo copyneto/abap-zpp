@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Executa rateio e lança cont. de estoque</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFGPP_LANCA_CONT_ESTOQUETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFGPP_LANCA_CONT_ESTOQUE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFMPP_LANCA_CONT_ESTOQUE</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Executa rateio e lança contagem de estoque</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IT_AJUST_INV_HEADER</PARAMETER>
+       <TYP>ZCTGPP_AJUST_INV_H</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_AJUST_INV_ITEM</PARAMETER>
+       <TYP>ZCTGPP_AJUST_INV_I</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_AJUST_INV_MESSAGE</PARAMETER>
+       <TYP>ZCTGPP_AJUST_INV_M</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IT_AJUST_INV_HEADER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Ajuste de Inventário - Cabeçalho</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_AJUST_INV_ITEM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Ajuste de Inventário - Item</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_AJUST_INV_MESSAGE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Ajuste de Inventário - Mensagens</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

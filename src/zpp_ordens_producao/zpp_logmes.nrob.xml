@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_NROB" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <ATTRIBUTES>
+    <OBJECT>ZPP_LOGMES</OBJECT>
+    <DOMLEN>NUMC10</DOMLEN>
+    <PERCENTAGE>5.0</PERCENTAGE>
+    <CHANGED_AT>20220510183630.711798</CHANGED_AT>
+    <CHANGED_BY>ALOPES</CHANGED_BY>
+    <ENAME>RFARIAS</ENAME>
+    <EDATE>2022-05-08</EDATE>
+    <ETIME>20:57:23</ETIME>
+   </ATTRIBUTES>
+   <TEXT>
+    <LANGU>P</LANGU>
+    <OBJECT>ZPP_LOGMES</OBJECT>
+    <TXT>Log Mês</TXT>
+    <TXTSHORT>Log Mês</TXTSHORT>
+    <ENAME>RFARIAS</ENAME>
+    <EDATE>2022-05-08</EDATE>
+    <ETIME>20:57:23</ETIME>
+   </TEXT>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,18 @@
+projection;
+
+define behavior for ZC_PP_CRIAR_INVENTARIO_HEADER alias CriarInventarioHdr
+{
+  use create;
+  use update;
+  use delete;
+  use association _Item;
+//  use association _Item { internal create ; }
+}
+
+define behavior for ZC_PP_CRIAR_INVENTARIO_ITEM  alias CriarInventarioItem
+{
+
+  use update ;
+    use association  _Header;
+    use action mensagens;
+}

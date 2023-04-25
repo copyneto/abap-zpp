@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCLPP_PREENCHE_TABELAS_NOR_AP</CLSNAME>
+    <LANGU>P</LANGU>
+    <DESCRIPT>Preenche tabela header e itens - PLANO_PRODUCAO</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CONVERTE_XSTRING_PARA_IT</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Converte xstring para tabela interna</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>INSERT_ZTPP_NRM_APR_CON</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Insere dados na tabela ztpp_prod_curto</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PREENCHE_TABELA_COMPONENTES</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Preenche tabela dos componentes</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CONVERTE_XSTRING_PARA_IT</CMPNAME>
+     <SCONAME>IV_NOME_ARQ</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Nome de file para dados externos</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>INSERT_ZTPP_NRM_APR_CON</CMPNAME>
+     <SCONAME>IV_GUID</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>GUID em formato &apos;RAW&apos;</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

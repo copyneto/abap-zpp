@@ -1,0 +1,90 @@
+@Metadata.layer: #CORE
+@UI: {
+    headerInfo: { typeName: 'Receita Mestre',
+                  typeNamePlural: 'Receitas Mestre',
+                  title: { type: #STANDARD, label: 'Receita Mestre', value: 'Material'} },
+    presentationVariant: [{ sortOrder: [{by: 'Material', direction: #DESC }] }] }
+
+annotate view ZC_PP_RECEITA_MESTRE with
+{
+
+  @UI: {  lineItem:       [ { position: 10 } ],
+          identification: [ { position: 10 } ],
+          selectionField: [ { position: 10 } ] }
+  Centro;
+
+  @UI: {  lineItem:       [ { position: 20 } ],
+          identification: [ { position: 20 } ],
+          selectionField: [ { position: 20 } ] }
+  VersaoPrdocucao;
+
+  @UI: {  lineItem:       [ { position: 30 } ],
+          identification: [ { position: 30 } ],
+          selectionField: [ { position: 30 } ] }
+  Grupo;
+
+  @UI: {  lineItem:       [ { position: 40 } ],
+          identification: [ { position: 40 } ]}
+  Material;
+
+  @UI: {  lineItem:       [ { position: 50 } ],
+          identification: [ { position: 50 } ] }
+  MaterialName;
+
+  @UI: {  lineItem:       [ { position: 60 } ],
+          identification: [ { position: 60 } ] }
+  NumeradorGrupo;
+  
+  @UI: {  lineItem:       [ { position: 70 } ],
+        identification:   [ { position: 70 } ] }
+  NOperacao;
+
+  @UI: {  lineItem:       [ { position: 80 } ],
+          identification: [ { position: 80 } ] }
+  ChaveControle;
+
+  @UI: {  lineItem:       [ { position: 90 } ],
+          identification: [ { position: 90 } ] }
+  TextoOperacao;
+    
+  @UI: {  lineItem:       [ { position: 100 } ],
+          identification: [ { position: 100 } ] }
+  Quantidade;
+
+  @UI: {  lineItem:       [ { position: 110 } ],
+          identification: [ { position: 110 } ] }
+  UmbOperacao;
+
+  @UI: {  lineItem:       [ { position: 120, label: 'Setup' } ],
+          identification: [ { position: 120, label: 'Setup' } ] }
+  Valor01;
+
+  @UI: {  lineItem:       [ { position: 130 } ],
+          identification: [ { position: 130 } ] }
+  Umb01;
+
+  @UI: {  lineItem:       [ { position: 140, label: 'Máquina' } ],
+          identification: [ { position: 140, label: 'Máquina' } ] }
+  Valor02;
+
+  @UI: {  lineItem:       [ { position: 150 } ],
+          identification: [ { position: 150 } ] }
+  Umb02;
+
+  @UI: {  lineItem:       [ { position: 160, label: 'Mão de obra' } ],
+          identification: [ { position: 160, label: 'Mão de obra' } ] }
+  Valor03;
+
+  @UI: {  lineItem:       [ { position: 170 } ],
+          identification: [ { position: 170 } ] }
+  Umb03;
+
+  @UI: {  lineItem:       [ { position: 180 } ],
+          identification: [ { position: 180 } ] }
+  PacotesPorMinuto;
+
+  @UI: {  lineItem:       [ { position: 190 } ],
+          identification: [ { position: 190 } ] }
+  MaterialType;
+
+}

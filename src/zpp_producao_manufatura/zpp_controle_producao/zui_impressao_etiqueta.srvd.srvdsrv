@@ -1,0 +1,4 @@
+@EndUserText.label: 'Impressão da etiqueta de confirmação'
+define service ZUI_IMPRESSAO_ETIQUETA {
+  expose ZC_PP_IMPRESSAO_ETIQUETA as Impressao;
+}

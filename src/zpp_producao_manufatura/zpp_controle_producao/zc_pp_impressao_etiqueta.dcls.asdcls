@@ -1,0 +1,11 @@
+@EndUserText.label: 'CDS de Autorização'
+@MappingRole: true
+define role ZC_PP_IMPRESSAO_ETIQUETA {
+    grant
+        select
+            on
+                ZC_PP_IMPRESSAO_ETIQUETA
+                    where
+                        inheriting conditions from entity ZI_PP_IMPRESSAO_ETIQUETA;
+                        
+}

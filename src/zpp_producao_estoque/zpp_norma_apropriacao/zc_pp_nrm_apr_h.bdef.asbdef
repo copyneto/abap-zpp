@@ -1,0 +1,33 @@
+projection;
+
+define behavior for ZC_PP_NRM_APR_H alias Header
+{
+  use create;
+  use update;
+  use delete;
+
+  use association _Consumo { create; }
+  use association _Ordens { create; }
+  use action encerrar;
+  use action imprimir;
+//  use action ordem;
+}
+
+define behavior for ZC_PP_NRM_APR_CON alias Consumo
+{
+  use update;
+  use delete;
+
+  use association _H;
+//  use action executar;
+}
+
+define behavior for ZC_PP_NRM_APR_ORD alias Ordens
+{
+  use update;
+  use delete;
+
+  use association _H;
+  use action ordens;
+
+}

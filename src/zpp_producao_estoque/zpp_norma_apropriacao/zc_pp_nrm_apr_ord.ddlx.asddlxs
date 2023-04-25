@@ -1,0 +1,119 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    typeName: 'Ordens',
+    typeNamePlural: 'Ordens',
+    title: {
+      type: #STANDARD,
+      value: 'ProcessOrder' }
+  }
+}
+annotate entity ZC_PP_NRM_APR_ORD with
+{
+
+  @UI.facet: [ /*{ id:         'Ordem',
+                purpose:       #STANDARD,
+                type:          #IDENTIFICATION_REFERENCE,
+                position:      10 },*/
+
+               { id:              'Ordem',
+                 isSummary:       true,
+                 type:            #COLLECTION,
+                 position:        10 },
+
+                        { parentId:        'Ordem',
+                          id:              'Controle',
+                          type:            #FIELDGROUP_REFERENCE,
+                          position:        10,
+                          targetQualifier: 'Controle' },
+
+               { id:            'Header',
+                purpose:       #STANDARD,
+                type:          #LINEITEM_REFERENCE,
+                position:      20,
+                targetElement: '_H'}]
+
+
+  @UI: { lineItem:        [ { position: 20, label: 'N° Ordem',
+                                semanticObjectAction: 'manage',
+                              type: #WITH_INTENT_BASED_NAVIGATION } ],
+         fieldGroup:  [ { position: 20, label: 'N° Ordem', qualifier: 'Controle' } ] }
+  //       identification:  [ { position: 20, label: 'N° Ordem' } ]  }
+  @Search.defaultSearchElement: true
+  @Search.fuzzinessThreshold: 0.8
+
+  @Consumption.semanticObject:'ProcessOrder'
+  ProcessOrder;
+
+  @UI: { lineItem:        [ { position: 30, label: 'Material' } ],
+         fieldGroup:      [ { position: 30, label: 'Material', qualifier: 'Controle' } ] }
+  //       identification:  [ { position: 30, label: 'Material' }   ]  }
+  @Search.defaultSearchElement: true
+  @Search.fuzzinessThreshold: 0.8
+  Material;
+
+  @UI: { lineItem:        [ { position: 40, label: 'Versão de Produção' } ],
+         fieldGroup:      [ { position: 40, label: 'Versão de Produção', qualifier: 'Controle' } ] }
+  ProdVersion;
+
+  @UI: { lineItem:        [ { position: 50, label: 'Centro' },
+                              { type: #FOR_ACTION, dataAction: 'ordens',  label: 'Gerar Ordens'}  ],
+         fieldGroup:      [ { position: 50, label: 'Centro', qualifier: 'Controle' } ] }
+  //       identification:  [ { position: 40, label: 'Centro' } ]  }
+  Plant;
+
+  @UI: { lineItem:        [ { position: 60, label: 'Tipo da Ordem' } ],
+         fieldGroup:      [ { position: 60, label: 'Tipo da Ordem', qualifier: 'Controle' } ] }
+  //         identification:  [ { position: 50, label: 'Tipo da Ordem' } ]  }
+  OrderType;
+
+  @UI: { lineItem:        [ { position: 70, label: 'Data' } ],
+         fieldGroup:      [ { position: 70, label: 'Data', qualifier: 'Controle' } ] }
+  //         identification:  [ { position: 60, label: 'Data' } ]  }
+  BasicStartDate;
+
+  @UI: { lineItem:        [ { position: 80, label: 'Quantidade Requerida' } ],
+         fieldGroup:      [ { position: 80, label: 'Quantidade Requerida', qualifier: 'Controle' } ] }
+  //         identification:  [ { position: 70, label: 'Quantidade Requerida' } ]  }
+  Quantity;
+  @UI: { lineItem:        [ { position: 85, label: 'Quantidade Produzida' } ]  }
+  QuantityConfirmed;
+  @UI: { lineItem:        [ { position: 86 } ]  }
+  QuantityRefugo;
+  @UI: { lineItem:        [ { position: 87 } ]  }
+  QuantityTotal;
+  //QuantityUom;
+  /*  @UI.hidden: true
+    @UI: { lineItem:        [ { position: 80, label: '% de Apropriação', type: #AS_DATAPOINT, criticality: 'CriticalPerc' } ],
+         identification:  [ { position: 80, label: '% de Apropriação', type: #AS_DATAPOINT, criticality: 'CriticalPerc' } ]  }
+    @UI.dataPoint: { visualization: #PROGRESS,
+                     title: '% de Apropriação',
+                     targetValueElement: 'Total',
+                     criticality: 'CriticalPerc' }
+    Percentage;*/
+
+  @UI: { lineItem:        [ { position: 90, label: 'Status', criticality: 'StatusCriticality',
+                               semanticObjectAction: 'showList', type: #WITH_INTENT_BASED_NAVIGATION }  ],
+         fieldGroup:      [ { position: 90, label: 'Status', qualifier: 'Controle' } ],
+  //         identification:  [ { position: 90, label: 'Status' , criticality: 'StatusCriticality'} ]        ,
+         dataPoint: { title: 'Status', criticality: 'StatusCriticality' } }
+  @Consumption.semanticObject: 'ApplicationLog'
+  Status;
+
+  @UI: { fieldGroup:      [ { position: 110, qualifier: 'Controle' } ] }
+  //identification:  [ { position: 110 } ] }
+  CreatedBy;
+  @UI: { fieldGroup:      [ { position: 120, qualifier: 'Controle' } ] }
+  //identification:  [ { position: 120 } ] }
+  CreatedAt;
+  @UI: { fieldGroup:      [ { position: 130, qualifier: 'Controle' } ] }
+  //{   identification:  [ { position: 130 } ] }
+  LastChangedBy;
+  @UI: { fieldGroup:      [ { position: 130, qualifier: 'Controle' } ] }
+  //{  identification:  [ { position: 140 } ] }
+  LastChangedAt;
+  @UI: { fieldGroup:      [ { position: 130, qualifier: 'Controle' } ] }
+  //{  identification:  [ { position: 150 } ] }
+  LocalLastChangedAt;
+
+}

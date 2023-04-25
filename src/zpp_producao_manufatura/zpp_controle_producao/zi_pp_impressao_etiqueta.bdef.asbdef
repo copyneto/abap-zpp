@@ -1,0 +1,8 @@
+unmanaged implementation in class zclpp_impressao_etiqueta unique;
+
+define behavior for ZI_PP_IMPRESSAO_ETIQUETA alias Impressao
+{
+
+  action ( features : instance  ) Imprimir result [1] $self;
+
+}

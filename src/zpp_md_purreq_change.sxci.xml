@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SXCI" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SXCI>
+    <IMPLEMENTATION_DATA>
+     <IMP_NAME>ZPP_MD_PURREQ_CHANGE</IMP_NAME>
+     <TEXT>Modificação de requisições de compra - MRP</TEXT>
+     <IMP_CLASS>ZCL_IM_PP_MD_PURREQ_CHANGE</IMP_CLASS>
+     <EXIT_NAME>MD_PURREQ_CHANGE</EXIT_NAME>
+     <INTER_NAME>IF_EX_MD_PURREQ_CHANGE</INTER_NAME>
+     <ACTIVE>X</ACTIVE>
+    </IMPLEMENTATION_DATA>
+   </SXCI>
+  </asx:values>
+ </asx:abap>
+</abapGit>

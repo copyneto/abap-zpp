@@ -1,0 +1,66 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    typeName: 'Consumo',
+    typeNamePlural: 'Consumo',
+    title: {
+      type: #STANDARD,
+      value: 'Material' }
+  }
+}
+annotate entity ZC_PP_NRM_APR_CON with
+{
+  //DocUuidH;
+  //DocUuidConsumo;
+
+  @UI.facet: [ { id:         'Consumo',
+              purpose:       #STANDARD,
+              type:          #IDENTIFICATION_REFERENCE,
+              position:      10 },
+                           { id:            'Header',
+              purpose:       #STANDARD,
+              type:          #LINEITEM_REFERENCE,
+              position:      20,
+              targetElement: '_H'}]
+
+  @UI: { lineItem:        [ { position: 20, label: 'Material',
+                              semanticObjectAction: 'showList',
+                              type: #WITH_INTENT_BASED_NAVIGATION } ],
+     identification:  [ { position: 20, label: 'Material' } ]  }
+  @Consumption.semanticObject: 'ApplicationLog'
+  Material;
+
+  @UI: { lineItem:        [ { position: 30, label: 'Centro' }  ],
+     identification:  [ { position: 30, label: 'Centro' }  ]  }
+  Plant;
+
+  @UI: { lineItem:        [ { position: 40, label: 'Deposito' } ],
+     identification:  [ { position: 40, label: 'Deposito' } ]  }
+  StgeLoc;
+
+  @UI: { lineItem:        [ { position: 50, label: 'N° Lote' } ],
+     identification:  [ { position: 50, label: 'N° Lote' } ]  }
+  Batch;
+
+  @UI: { lineItem:        [ { position: 60, label: 'Quantidade' } ],
+     identification:  [ { position: 60, label: 'Quantidade' } ]  }
+  EntryQnt;
+  //EntryUom;
+
+  @UI: {  lineItem:        [ { position: 70, label: 'Status' }],
+          identification:  [ { position: 70, label: 'Status' } ] ,
+           dataPoint: { qualifier: 'StatusHeader', title: 'Status', criticality: 'StatusCriticality' } }
+  Status;
+  @UI: {  identification:  [ { position: 110 } ] }
+  CreatedBy;
+  @UI: {  identification:  [ { position: 120 } ] }
+  CreatedAt;
+  @UI: {   identification:  [ { position: 130 } ] }
+  LastChangedBy;
+  @UI: {  identification:  [ { position: 140 } ] }
+  LastChangedAt;
+  @UI: {  identification:  [ { position: 150 } ] }
+  LocalLastChangedAt;
+
+
+}

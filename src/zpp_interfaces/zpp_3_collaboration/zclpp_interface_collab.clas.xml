@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCLPP_INTERFACE_COLLAB</CLSNAME>
+    <LANGU>P</LANGU>
+    <DESCRIPT>Classe de Interface Collaboration</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>EXECUTE_JOB_R04</CMPNAME>
+     <SCONAME>IR_LGORT</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Tipo de tabela ranges para depósito</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXECUTE_JOB_R04</CMPNAME>
+     <SCONAME>IR_MATKL</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Ctg.tabela range p/grupo de mercadorias</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXECUTE_JOB_R04</CMPNAME>
+     <SCONAME>IR_MTART</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Range: Material Type</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

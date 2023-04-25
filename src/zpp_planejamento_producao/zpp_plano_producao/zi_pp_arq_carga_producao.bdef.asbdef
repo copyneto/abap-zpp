@@ -1,0 +1,109 @@
+managed;
+
+define behavior for zi_pp_arq_carga_producao alias ArqCargaProducao
+implementation in class zclpp_i_pp_arq_carga_producao unique
+persistent table ztpp_arq_prod
+lock master
+authorization master ( instance )
+etag master LocalLastChangedAt
+{
+  //create;
+  update ( features : instance );
+  delete ( features : instance );
+  association _ArqCurtoPrazo;// { create; }
+  association _ArqMedioPrazo;// { create; }
+
+  field ( readonly ) LastChangedAt, LastChangedBy, CreatedAt, CreatedBy, LocalLastChangedAt;
+
+  action ( features : instance ) processar result [1] $self;
+
+  mapping for ztpp_arq_prod
+  {
+    Id = id;
+    Name = name;
+    Userid = userid;
+    ImportDate = import_date;
+    ImportTime = import_time;
+    Type = type;
+    Status = status;
+    Plant = plant;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LastChangedBy = last_changed_by;
+    LastChangedAt = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+}
+
+define behavior for zi_pp_arq_prod_curto_prazo alias ArqCurtoPrazo
+//implementation in class zclpp_i_pp_prod_curto_prazo unique
+persistent table ztpp_prod_curto
+lock dependent by _ArqCargaProducao
+authorization dependent by _ArqCargaProducao
+etag master LocalLastChangedAt
+{
+  association _ArqCargaProducao;
+
+  update;
+  delete;
+
+  field ( readonly : update ) Id;
+  field ( readonly ) LastChangedAt, LastChangedBy, CreatedAt, CreatedBy, LocalLastChangedAt;
+
+  mapping for ztpp_prod_curto
+  {
+    Id = id;
+    Line = line;
+    PldordProfile = pldord_profile;
+    Material = material;
+    PlanPlant = plan_plant;
+    ProdPlant = prod_plant;
+    TotalPlordQty = total_plord_qty;
+    OrderStartDate = order_start_date;
+    FirmingInd = firming_ind;
+    Unit = unit;
+    Version = version;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LastChangedBy = last_changed_by;
+    LastChangedAt = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+}
+
+define behavior for zi_pp_arq_prod_medio_prazo alias ArqMedioPrazo
+//implementation in class zclpp_i_pp_prod_medio_prazo unique
+persistent table ztpp_prod_medio
+lock dependent by _ArqCargaProducao
+authorization dependent by _ArqCargaProducao
+etag master LocalLastChangedAt
+{
+  association _ArqCargaProducao;
+
+  update;
+  delete;
+
+  field ( readonly : update ) Id;
+  field ( readonly ) LastChangedAt, LastChangedBy, CreatedAt, CreatedBy, LocalLastChangedAt;
+
+  mapping for ztpp_prod_medio
+  {
+    Id = id;
+    Line = line;
+    Material = material;
+    Plant = plant;
+    Version = version;
+    VersActiv = vers_activ;
+    DateType = date_type;
+    ReqDate = req_date;
+    ReqQty = req_qty;
+    Unit = unit;
+    BomExpl = bomexpl;
+    ProdVes = prod_ves;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LastChangedBy = last_changed_by;
+    LastChangedAt = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+}

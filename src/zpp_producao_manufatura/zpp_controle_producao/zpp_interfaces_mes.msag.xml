@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZPP_INTERFACES_MES</ARBGB>
+    <MASTERLANG>P</MASTERLANG>
+    <STEXT>Classe de mensagens interfaces MES</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPP_INTERFACES_MES</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Não há registros de plantas para a ordem &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPP_INTERFACES_MES</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Não há registros de depósitos para ordem &amp;1, material &amp;2 e planta &amp;3</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPP_INTERFACES_MES</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Não há registros na tabela MCHB com: Ordem &amp;1, Material &amp;2, Planta &amp;3</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZPS1</ARBGB>
+    <MASTERLANG>P</MASTERLANG>
+    <STEXT>Máscara não permitida para Perfil de Projeto.</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPS1</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Verificar campos Empresa, Divisão, Centro de Lucro e Centro de Custo</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPS1</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Divisão inválida</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPS1</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Combinação Centro de Lucro e Divisão inválida</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPS1</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Combinação Centro e Divisão inválida</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

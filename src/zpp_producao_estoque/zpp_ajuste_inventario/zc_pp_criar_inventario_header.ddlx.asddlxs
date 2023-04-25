@@ -1,0 +1,91 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    typeName: 'Inventário',
+    typeNamePlural: 'Inventários',
+    title: {
+      type: #STANDARD,
+      value: 'DocName' }
+  }
+}
+annotate view ZC_PP_CRIAR_INVENTARIO_HEADER with
+{
+  @UI.facet: [
+    { purpose: #HEADER,
+      position: 10,
+      type: #DATAPOINT_REFERENCE,
+      targetQualifier: 'StatusData' },
+
+  { label: 'Informações Gerais',
+    id: 'GeneralInfo',
+    type: #COLLECTION,
+    position: 10 },
+
+    { label: 'Geral',
+      purpose: #STANDARD,
+      position: 10,
+      type: #IDENTIFICATION_REFERENCE,
+      parentId: 'GeneralInfo' },
+
+    { label: 'Datas',
+      purpose: #STANDARD,
+      position: 30,
+      type: #FIELDGROUP_REFERENCE,
+      parentId: 'GeneralInfo',
+      targetQualifier: 'DatesGroup' },
+
+    { label: 'Comentário',
+      purpose: #STANDARD,
+      position: 40,
+      type: #FIELDGROUP_REFERENCE,
+      parentId: 'GeneralInfo',
+      targetQualifier: 'CommentsGroup' },
+
+    // Itens
+    { id: 'Item',
+      label: 'Itens',
+      purpose: #STANDARD,
+      position: 20,
+      type: #LINEITEM_REFERENCE,
+      targetElement: '_Item' }
+  ]
+  @UI: { lineItem:  [ { position: 10 } ], identification:  [ { position: 10 } ]  }
+  DocumentNo;
+  @UI: { lineItem:  [ { position: 20 } ], identification:  [ { position: 20 } ] }
+  IdContagem;
+  @UI.selectionField: [{position: 10 }]
+  @UI: { lineItem:  [ { position: 30 } ], identification:  [ { position: 30 } ] }
+  @Consumption.valueHelpDefinition: [ { entity: { name: 'I_PlantStdVH', element: 'Plant' } } ]
+  Plant;
+  @UI.selectionField: [{position: 20 }]
+  @UI: { lineItem:  [ { position: 40 } ] }
+   @UI.fieldGroup: [{qualifier: 'DatesGroup', position: 10 }]
+  DateStart;
+  @UI.selectionField: [{position: 30 }]
+  @UI: { lineItem:  [ { position: 50 } ] }
+   @UI.fieldGroup: [{qualifier: 'DatesGroup', position: 20 }]
+  DateEnd;
+  @UI: { lineItem:  [ { position: 60 } ], identification:  [ { position: 60 } ] }
+  DocName;
+  @UI: { lineItem:  [ { position: 70 } ] }
+   @UI.fieldGroup: [{qualifier: 'DatesGroup', position: 30 }]
+  CreatedAt;
+  @Consumption.valueHelpDefinition: [{
+    entity: {
+    name: 'ZI_PP_AJUSTE_INVENTARIO_STATUS',
+    element: 'StatusId'
+  }
+  }]
+  @UI.lineItem: [{position: 80, criticality: 'StatusCriticality' }]
+  @UI.textArrangement: #TEXT_ONLY
+  @UI.dataPoint:{ qualifier: 'StatusData', title: 'Status', criticality: 'StatusCriticality' }
+  Status;
+  @UI.hidden: true
+  StatusCriticality;
+  //      Status;
+  //      CreatedBy;
+  //      CreatedAt;
+  //      LastChangedBy;
+  //      LastChangedAt;
+  //      LocalLastChangedAt;
+}

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SXCI" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SXCI>
+    <IMPLEMENTATION_DATA>
+     <IMP_NAME>ZPP_CRIA_LOTE_PP</IMP_NAME>
+     <TEXT>Criação de lote de produção</TEXT>
+     <IMP_CLASS>ZCLPP_CRIA_LOTE_PP</IMP_CLASS>
+     <EXIT_NAME>WORKORDER_GOODSMVT</EXIT_NAME>
+     <INTER_NAME>IF_EX_WORKORDER_GOODSMVT</INTER_NAME>
+     <ACTIVE>X</ACTIVE>
+    </IMPLEMENTATION_DATA>
+   </SXCI>
+  </asx:values>
+ </asx:abap>
+</abapGit>

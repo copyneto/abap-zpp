@@ -1,0 +1,4 @@
+@EndUserText.label: 'Retatório Ordens Produção'
+define service ZUI_PP_LOG_ORDENS_PROD {
+  expose ZC_PP_LOG_ORDENS_PRODUCAO as Relatorio;
+}

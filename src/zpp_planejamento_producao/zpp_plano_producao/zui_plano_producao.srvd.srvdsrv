@@ -1,0 +1,9 @@
+@EndUserText.label: 'Arquivos de Carga de Produção'
+define service ZUI_PLANO_PRODUCAO {
+  expose ZC_PP_ARQ_CARGA_PRODUCAO;
+  expose ZC_PP_ARQ_PROD_CURTO_PRAZO;
+  expose ZC_PP_ARQ_PROD_MEDIO_PRAZO;
+  expose P_USER_ADDR;
+  expose I_MaterialText;
+  expose C_Plantvaluehelp;
+}

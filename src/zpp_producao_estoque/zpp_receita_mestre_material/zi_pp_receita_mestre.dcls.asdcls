@@ -1,0 +1,11 @@
+@EndUserText.label: 'CDS de Autorização'
+@MappingRole: true
+define role ZI_PP_RECEITA_MESTRE {
+    grant
+        select
+            on
+                ZI_PP_RECEITA_MESTRE
+                    where
+                        ( Centro ) = aspect pfcg_auth( ZPPWERKS, WERKS, ACTVT = '03' );
+                        
+}

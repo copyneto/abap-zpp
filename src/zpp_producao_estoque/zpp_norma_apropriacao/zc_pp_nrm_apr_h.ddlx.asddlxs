@@ -1,0 +1,106 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: { typeName: 'Guia de beneficiamento',
+                     title: { value: 'Documentno' },
+                     typeNamePlural: 'Guias'
+                   },
+       presentationVariant: [{ sortOrder: [{ by: 'Documentno', direction:  #DESC }] }]
+     }
+
+annotate entity ZC_PP_NRM_APR_H with
+{
+  @UI.facet: [
+                { id:         'StatusHeader',
+                 purpose:    #HEADER,
+                 type:       #DATAPOINT_REFERENCE,
+                 targetQualifier: 'StatusHeader',
+                 position:      20 },
+                { id:           'Facet',
+                 purpose:       #STANDARD,
+                 type:          #IDENTIFICATION_REFERENCE,
+                 label:         'Dados Gerais',
+                 position:      30 },
+                { id:            'Ordens',
+                 purpose:       #STANDARD,
+                 type:          #LINEITEM_REFERENCE,
+                 label:         'Ordens',
+                 position:      40,
+                 targetElement: '_Ordens'},
+                { id:            'Consumo',
+                 purpose:       #STANDARD,
+                 type:          #LINEITEM_REFERENCE,
+                 label:         'Consumo',
+                 position:      50,
+                 targetElement: '_Consumo'}       ]
+
+
+  //DocUuidH;
+
+  // -----------------------------------------------------
+  // Action
+  // ------------------------------------------------------
+
+  @UI: { lineItem:        [ { type: #STANDARD },
+                            { type: #FOR_ACTION, dataAction: 'encerrar', position: 10, label: 'Encerrar' },
+                            { type: #FOR_ACTION, dataAction: 'imprimir', position: 01, label: 'Imprimir Guia' } ],
+         identification:  [ { type: #STANDARD },
+                            { type: #FOR_ACTION, dataAction: 'encerrar', position: 10, label: 'Encerrar' },
+                            { type: #FOR_ACTION, dataAction: 'imprimir', position: 20, label: 'Imprimir Guia' } ] }
+
+  @UI: { lineItem:        [ { position: 10, label: 'N° Doc' } ],
+         identification:  [ { position: 10, label: 'N° Doc' } ],
+         selectionField:  [ { position: 10 } ] }
+  @Search.defaultSearchElement: true
+  @Search.fuzzinessThreshold: 0.8
+  Documentno;
+
+  @UI: { identification:  [ { position: 20, label: 'Instrução' }] }
+  @UI.multiLineText: true
+  Docname;
+
+  @UI: { lineItem:        [ { position: 30, label: 'Centro' } ],
+         identification:  [ { position: 30, label: 'Centro' } ],
+         selectionField:  [ { position: 30 } ] }
+  @Search.defaultSearchElement: true
+  @Search.fuzzinessThreshold: 0.8
+  Plant;
+
+  @UI: { lineItem:        [ { position: 40, label: 'Tipo de ordem' } ],
+         identification:  [ { position: 40, label: 'Tipo de ordem' } ],
+         selectionField:  [ { position: 40 } ] }
+  @Search.defaultSearchElement: true
+  @Search.fuzzinessThreshold: 0.8
+  OrderType;
+
+  @UI: { lineItem:        [ { position: 50, label: 'Data' } ],
+         identification:  [ { position: 50, label: 'Data' } ],
+         selectionField:  [ { position: 50 } ] }
+  BasicStartDate;
+
+  @UI: { lineItem:        [ { position: 60, label: 'Status', criticality: 'StatusCriticality' } ],
+         identification:  [ { position: 60, label: 'Status', criticality: 'StatusCriticality' } ],
+         selectionField:  [ { position: 60 } ],
+         dataPoint: { qualifier: 'StatusHeader', title: 'Status', criticality: 'StatusCriticality' } }
+  Status;
+
+  @UI: {  identification:  [ { position: 70 } ] }
+  CreatedBy;
+  @UI: {  identification:  [ { position: 80 } ] }
+  CreatedAt;
+  @UI: {   identification:  [ { position: 90 } ] }
+  LastChangedBy;
+  @UI: {  identification:  [ { position: 100 } ] }
+  LastChangedAt;
+  @UI: {  identification:  [ { position: 110 } ] }
+  LocalLastChangedAt;
+
+  @UI: { hidden: true }
+  LogObjectId;
+
+  @UI: { hidden: true }
+  LogObjectSubId;
+
+  /* Associations
+  _Consumo;
+  _Ordens;*/
+
+}

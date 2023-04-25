@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCLPP_LANCA_CONT_ESTOQUE</CLSNAME>
+    <LANGU>P</LANGU>
+    <DESCRIPT>Executa rateio e lança contagem de estoque</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <MSG_ID>ZPP_INVENTARIO_PROD</MSG_ID>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Quantidade de rateio insuficiente para o período.</ENTRY>
+     <LENGTH>98</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>MAIN</CMPNAME>
+     <SCONAME>ET_AJUST_INV_MESSAGE</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Ajuste de Inventário - Mensagens</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>MAIN</CMPNAME>
+     <SCONAME>IT_AJUST_INV_HEADER</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Ajuste de Inventário - Cabeçalho</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

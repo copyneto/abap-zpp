@@ -1,0 +1,11 @@
+@EndUserText.label: 'CDS de Autorização'
+@MappingRole: true
+define role ZI_PP_IMPRESSAO_ETIQUETA {
+    grant
+        select
+            on
+                ZI_PP_IMPRESSAO_ETIQUETA
+                    where
+                        ( Plant ) = aspect pfcg_auth( ZPPWERKS, WERKS, ACTVT = '03' );
+                        
+}

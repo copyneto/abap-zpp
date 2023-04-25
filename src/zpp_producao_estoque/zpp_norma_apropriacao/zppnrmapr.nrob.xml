@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_NROB" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <ATTRIBUTES>
+    <OBJECT>ZPPNRMAPR</OBJECT>
+    <DOMLEN>ZD_NR_NRM_APROP</DOMLEN>
+    <PERCENTAGE>5.0</PERCENTAGE>
+    <BUFFER>X</BUFFER>
+    <NOIVBUFFER>00000010</NOIVBUFFER>
+    <CHANGED_AT>20220615174653.569544</CHANGED_AT>
+    <CHANGED_BY>ALOPES</CHANGED_BY>
+    <ENAME>PFERRAZ</ENAME>
+    <EDATE>2021-09-27</EDATE>
+    <ETIME>17:58:06</ETIME>
+   </ATTRIBUTES>
+   <TEXT>
+    <LANGU>P</LANGU>
+    <OBJECT>ZPPNRMAPR</OBJECT>
+    <TXT>Norma de Apropriação - Graos</TXT>
+    <TXTSHORT>Norma de Apropriação</TXTSHORT>
+    <ENAME>PFERRAZ</ENAME>
+    <EDATE>2021-09-27</EDATE>
+    <ETIME>17:58:06</ETIME>
+   </TEXT>
+  </asx:values>
+ </asx:abap>
+</abapGit>

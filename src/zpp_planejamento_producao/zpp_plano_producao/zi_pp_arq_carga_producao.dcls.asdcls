@@ -1,0 +1,11 @@
+@EndUserText.label: 'CDS de Autorização'
+@MappingRole: true
+define role ZI_PP_ARQ_CARGA_PRODUCAO {
+    grant
+        select
+            on
+                ZI_PP_ARQ_CARGA_PRODUCAO
+                    where
+                        ( Plant ) = aspect pfcg_auth( ZPPWERKS, WERKS, ACTVT = '03' );
+                        
+}

@@ -1,0 +1,97 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: { typeName: 'Arquivo de Produção',
+                     typeNamePlural: 'Arquivos de Produção',
+                     title: { type: #STANDARD, label: 'Arquivos de Produção', value: 'Name' } },
+  presentationVariant: [{ sortOrder: [{ by: 'ImportDate', direction:  #DESC },
+                                      { by: 'ImportTime', direction:  #DESC },
+                                      { by: 'Name', direction: #ASC } ] }] }
+
+annotate view ZC_PP_ARQ_CARGA_PRODUCAO with
+{
+
+  // ------------------------------------------------------
+  // Header information
+  // ------------------------------------------------------
+  @UI.facet: [ { id:              'ArqCargaProducao',
+                 purpose:         #STANDARD,
+                 type:            #IDENTIFICATION_REFERENCE,
+                 label:           'Arquivo Carga Produção',
+                 position:        10 },
+               { id:              'ArqCurtoPrazo',
+                 purpose:         #STANDARD,
+                 type:            #LINEITEM_REFERENCE,
+                 label:           'Arquivo Curto Prazo',
+                 position:        20,
+                 targetElement:   '_ArqCurtoPrazo'},
+               { id:              'ArqMedioPrazo',
+                 purpose:         #STANDARD,
+                 type:            #LINEITEM_REFERENCE,
+                 label:           'Arquivo Médio Prazo',
+                 position:        20,
+                 targetElement:   '_ArqMedioPrazo'} ]
+
+  // ------------------------------------------------------
+  // Field information
+  // ------------------------------------------------------
+  @UI.hidden: true
+  Id;
+  @UI: {  lineItem:       [ { position: 10, label: 'Nome' },
+                            { type: #FOR_ACTION, dataAction: 'processar', label: 'Executar'  } ],
+          identification: [ { position: 10, label: 'Nome' },
+                            { type: #FOR_ACTION, dataAction: 'processar', label: 'Executar'  } ],
+          selectionField: [ { position: 10 } ] }
+  Name;
+  
+  @UI: {  lineItem:       [ { position: 20, label: 'Responsável' } ],
+          identification: [ { position: 20, label: 'Responsável' } ],
+          selectionField: [ { position: 20 } ] }
+  Userid;
+  
+  @UI: {  lineItem:       [ { position: 30, label: 'Data Importação' } ],
+          identification: [ { position: 30, label: 'Data Importação' } ],
+          selectionField: [ { position: 30 } ] }
+  ImportDate;
+  
+  @UI: {  lineItem:       [ { position: 40, label: 'Hora Importação' } ],
+          identification: [ { position: 40, label: 'Hora Importação' } ] }
+  ImportTime;
+  
+  @UI: {  lineItem:       [ { position: 50, label: 'Tipo' } ],
+          identification: [ { position: 50, label: 'Tipo' } ],
+          selectionField: [ { position: 40 } ] }
+  TypeName;
+
+  @UI: { lineItem:        [ { position: 60, label: 'Centro' } ],
+         identification:  [ { position: 60, label: 'Centro' } ],
+          selectionField: [ { position: 50 } ]  }
+  Plant;
+  
+  @UI.hidden: true
+  PlantName;
+  
+  @UI.hidden: true
+  Status;
+  
+  @UI: {  lineItem:       [ { position: 70, label: 'Status', criticality: 'StatusCriticality' } ],
+          identification: [ { position: 70, label: 'Status', criticality: 'StatusCriticality' } ] }
+  StatusName;
+  
+  @UI.hidden: true
+  StatusCriticality;
+  
+  @UI.hidden: true                                     
+  CreatedBy;
+ 
+  @UI.hidden: true
+  CreatedAt;
+
+  @UI.hidden: true
+  LastChangedBy;
+
+  @UI.hidden: true
+  LastChangedAt;
+
+  @UI.hidden: true
+  LocalLastChangedAt;
+  
+}

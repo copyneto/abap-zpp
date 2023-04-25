@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>ZCLPP_DT_ESTOQUE_SALDO</OBJ_NAME_M>
+     <HASH_ID>7891B5CCC3154924B0B60FF219B8660EE9AA123B</HASH_ID>
+     <ID>&lt;type&gt; lines &lt;element&gt; lines &lt;type&gt; dtEstoqueSaldo http://trescoracoes.com.br/estoque/saldo http://trescoracoes.com.br/estoque/saldo</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>lines</IFR_NAME>
+     <IFR_NSPCE>http://trescoracoes.com.br/estoque/saldo</IFR_NSPCE>
+     <IFR_GNSPCE>http://trescoracoes.com.br/estoque/saldo</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>ZCLPP_</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NSPCE>http://trescoracoes.com.br/estoque/saldo</X-ML_NSPCE>
+     <X-ML_NAME>lines</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>EINME</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>EINME</OBJ_NAME2>
+     <ID>&lt;element&gt; einme &lt;type&gt; lines &lt;element&gt; lines &lt;type&gt; dtEstoqueSaldo http://trescoracoes.com.br/estoque/saldo http://trescoracoes.com.br/estoque/saldo</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>einme</IFR_NAME>
+     <IFR_TEXT>Estoque total de todos os batches não livres (RESTRITO)</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>decimal</IFR_XSDTYP>
+     <IFR_PREC>13</IFR_PREC>
+     <IFR_SCALE>3</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>EINME</R3_NAME>
+     <R3_TEXT>Estoque total de todos os batches não livres (RESTRITO)</R3_TEXT>
+     <R3_DATATYP>DEC</R3_DATATYP>
+     <R3_LENGTH>000016</R3_LENGTH>
+     <R3_DECIMAL>000003</R3_DECIMAL>
+     <R3_SEQNUM>000008</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>INSME</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>INSME</OBJ_NAME2>
+     <ID>&lt;element&gt; insme &lt;type&gt; lines &lt;element&gt; lines &lt;type&gt; dtEstoqueSaldo http://trescoracoes.com.br/estoque/saldo http://trescoracoes.com.br/estoque/saldo</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>insme</IFR_NAME>
+     <IFR_TEXT>Estoque em controle de qualidade</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>decimal</IFR_XSDTYP>
+     <IFR_PREC>13</IFR_PREC>
+     <IFR_SCALE>3</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>INSME</R3_NAME>
+     <R3_TEXT>Estoque em controle de qualidade</R3_TEXT>
+     <R3_DATATYP>DEC</R3_DATATYP>
+     <R3_LENGTH>000016</R3_LENGTH>
+     <R3_DECIMAL>000003</R3_DECIMAL>
+     <R3_SEQNUM>000009</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>KUNNR</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>KUNNR</OBJ_NAME2>
+     <ID>&lt;element&gt; kunnr &lt;type&gt; lines &lt;element&gt; lines &lt;type&gt; dtEstoqueSaldo http://trescoracoes.com.br/estoque/saldo http://trescoracoes.com.br/estoque/saldo</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>kunnr</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>KUNNR</R3_NAME>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000019</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>LABST</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>LABST</OBJ_NAME2>
+     <ID>&lt;element&gt; labst &lt;type&gt; lines &lt;element&gt; lines &lt;type&gt; dtEstoqueSaldo http://trescoracoes.com.br/estoque/saldo http://trescoracoes.com.br/estoque/saldo</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>labst</IFR_NAME>
+     <IFR_TEXT>Estoque de utilização livre avaliado</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>decimal</IFR_XSDTYP>
+     <IFR_PREC>13</IFR_PREC>
+     <IFR_SCALE>3</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>LABST</R3_NAME>
+     <R3_TEXT>Estoque de utilização livre avaliado</R3_TEXT>
+     <R3_DATATYP>DEC</R3_DATATYP>
+     <R3_LENGTH>000016</R3_LENGTH>
+     <R3_DECIMAL>000003</R3_DECIMAL>
+     <R3_SEQNUM>000011</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>LGORT</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>LGORT</OBJ_NAME2>
+     <ID>&lt;element&gt; lgort &lt;type&gt; lines &lt;element&gt; lines &lt;type&gt; dtEstoqueSaldo http://trescoracoes.com.br/estoque/saldo http://trescoracoes.com.br/estoque/saldo</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>lgort</IFR_NAME>
+     <IFR_TEXT>Depósito</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>4</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>LGORT</R3_NAME>
+     <R3_TEXT>Depósito</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000004</R3_LENGTH>
+     <R3_SEQNUM>000013</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>LIFNR</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>LIFNR</OBJ_NAME2>
+     <ID>&lt;element&gt; lifnr &lt;type&gt; lines &lt;element&gt; lines &lt;type&gt; dtEstoqueSaldo http://trescoracoes.com.br/estoque/saldo http://trescoracoes.com.br/estoque/saldo</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>lifnr</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>LIFNR</R3_NAME>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000018</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>MATERIAL_BASE_UNIT</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>MATERIAL_BASE_UNIT</OBJ_NAME2>
+     <ID>&lt;element&gt; MaterialBaseUnit &lt;type&gt; lines &lt;element&gt; lines &lt;type&gt; dtEstoqueSaldo http://trescoracoes.com.br/estoque/saldo http://trescoracoes.com.br/estoque/saldo</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>MaterialBaseUnit</IFR_NAME>
+     <IFR_TEXT>Unidade de medida básica</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>4</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>MATERIAL_BASE_UNIT</R3_NAME>
+     <R3_TEXT>Unidade de medida básica</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000004</R3_LENGTH>
+     <R3_SEQNUM>000012</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>MATERIAL_NAME</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>MATERIAL_NAME</OBJ_NAME2>
+     <ID>&lt;element&gt; MaterialName &lt;type&gt; lines &lt;element&gt; lines &lt;type&gt; dtEstoqueSaldo http://trescoracoes.com.br/estoque/saldo http://trescoracoes.com.br/estoque/saldo</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>MaterialName</IFR_NAME>
+     <IFR_TEXT>Texto breve de material</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>40</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>MATERIAL_NAME</R3_NAME>
+     <R3_TEXT>Texto breve de material</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000040</R3_LENGTH>
+     <R3_SEQNUM>000015</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>MATNR</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>MATNR</OBJ_NAME2>
+     <ID>&lt;element&gt; matnr &lt;type&gt; lines &lt;element&gt; lines &lt;type&gt; dtEstoqueSaldo http://trescoracoes.com.br/estoque/saldo http://trescoracoes.com.br/estoque/saldo</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>matnr</IFR_NAME>
+     <IFR_TEXT>Nº do material</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>40</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>MATNR</R3_NAME>
+     <R3_TEXT>Nº do material</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000040</R3_LENGTH>
+     <R3_SEQNUM>000016</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>RETME</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>RETME</OBJ_NAME2>
+     <ID>&lt;element&gt; retme &lt;type&gt; lines &lt;element&gt; lines &lt;type&gt; dtEstoqueSaldo http://trescoracoes.com.br/estoque/saldo http://trescoracoes.com.br/estoque/saldo</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>retme</IFR_NAME>
+     <IFR_TEXT>Estoque bloqueado de devoluções</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>decimal</IFR_XSDTYP>
+     <IFR_PREC>13</IFR_PREC>
+     <IFR_SCALE>3</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>RETME</R3_NAME>
+     <R3_TEXT>Estoque bloqueado de devoluções</R3_TEXT>
+     <R3_DATATYP>DEC</R3_DATATYP>
+     <R3_LENGTH>000016</R3_LENGTH>
+     <R3_DECIMAL>000003</R3_DECIMAL>
+     <R3_SEQNUM>000007</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>SOBKZ</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>SOBKZ</OBJ_NAME2>
+     <ID>&lt;element&gt; sobkz &lt;type&gt; lines &lt;element&gt; lines &lt;type&gt; dtEstoqueSaldo http://trescoracoes.com.br/estoque/saldo http://trescoracoes.com.br/estoque/saldo</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>sobkz</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>SOBKZ</R3_NAME>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000017</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>SPEME</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>SPEME</OBJ_NAME2>
+     <ID>&lt;element&gt; speme &lt;type&gt; lines &lt;element&gt; lines &lt;type&gt; dtEstoqueSaldo http://trescoracoes.com.br/estoque/saldo http://trescoracoes.com.br/estoque/saldo</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>speme</IFR_NAME>
+     <IFR_TEXT>Estoque bloqueado</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>decimal</IFR_XSDTYP>
+     <IFR_PREC>13</IFR_PREC>
+     <IFR_SCALE>3</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>SPEME</R3_NAME>
+     <R3_TEXT>Estoque bloqueado</R3_TEXT>
+     <R3_DATATYP>DEC</R3_DATATYP>
+     <R3_LENGTH>000016</R3_LENGTH>
+     <R3_DECIMAL>000003</R3_DECIMAL>
+     <R3_SEQNUM>000006</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>UMLME</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>UMLME</OBJ_NAME2>
+     <ID>&lt;element&gt; umlme &lt;type&gt; lines &lt;element&gt; lines &lt;type&gt; dtEstoqueSaldo http://trescoracoes.com.br/estoque/saldo http://trescoracoes.com.br/estoque/saldo</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>umlme</IFR_NAME>
+     <IFR_TEXT>Estoque em transferência (de depósito para depósito)</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>decimal</IFR_XSDTYP>
+     <IFR_PREC>13</IFR_PREC>
+     <IFR_SCALE>3</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>UMLME</R3_NAME>
+     <R3_TEXT>Estoque em transferência (de depósito para depósito)</R3_TEXT>
+     <R3_DATATYP>DEC</R3_DATATYP>
+     <R3_LENGTH>000016</R3_LENGTH>
+     <R3_DECIMAL>000003</R3_DECIMAL>
+     <R3_SEQNUM>000010</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>WERKS</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>WERKS</OBJ_NAME2>
+     <ID>&lt;element&gt; werks &lt;type&gt; lines &lt;element&gt; lines &lt;type&gt; dtEstoqueSaldo http://trescoracoes.com.br/estoque/saldo http://trescoracoes.com.br/estoque/saldo</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>werks</IFR_NAME>
+     <IFR_TEXT>Centro</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>4</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>WERKS</R3_NAME>
+     <R3_TEXT>Centro</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000004</R3_LENGTH>
+     <R3_SEQNUM>000014</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ZPRICE_BLOQ</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ZPRICE_BLOQ</OBJ_NAME2>
+     <ID>&lt;element&gt; Zprice_bloq &lt;type&gt; lines &lt;element&gt; lines &lt;type&gt; dtEstoqueSaldo http://trescoracoes.com.br/estoque/saldo http://trescoracoes.com.br/estoque/saldo</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>Zprice_bloq</IFR_NAME>
+     <IFR_TEXT>Preço standard</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>decimal</IFR_XSDTYP>
+     <IFR_PREC>13</IFR_PREC>
+     <IFR_SCALE>2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ZPRICE_BLOQ</R3_NAME>
+     <R3_TEXT>Preço standard</R3_TEXT>
+     <R3_DATATYP>DEC</R3_DATATYP>
+     <R3_LENGTH>000013</R3_LENGTH>
+     <R3_DECIMAL>000002</R3_DECIMAL>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ZPRICE_DEVOL</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ZPRICE_DEVOL</OBJ_NAME2>
+     <ID>&lt;element&gt; Zprice_devol &lt;type&gt; lines &lt;element&gt; lines &lt;type&gt; dtEstoqueSaldo http://trescoracoes.com.br/estoque/saldo http://trescoracoes.com.br/estoque/saldo</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>Zprice_devol</IFR_NAME>
+     <IFR_TEXT>Preço standard</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>decimal</IFR_XSDTYP>
+     <IFR_PREC>13</IFR_PREC>
+     <IFR_SCALE>2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ZPRICE_DEVOL</R3_NAME>
+     <R3_TEXT>Preço standard</R3_TEXT>
+     <R3_DATATYP>DEC</R3_DATATYP>
+     <R3_LENGTH>000013</R3_LENGTH>
+     <R3_DECIMAL>000002</R3_DECIMAL>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ZPRICE_LIVRE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ZPRICE_LIVRE</OBJ_NAME2>
+     <ID>&lt;element&gt; Zprice_livre &lt;type&gt; lines &lt;element&gt; lines &lt;type&gt; dtEstoqueSaldo http://trescoracoes.com.br/estoque/saldo http://trescoracoes.com.br/estoque/saldo</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>Zprice_livre</IFR_NAME>
+     <IFR_TEXT>Preço standard</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>decimal</IFR_XSDTYP>
+     <IFR_PREC>13</IFR_PREC>
+     <IFR_SCALE>2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ZPRICE_LIVRE</R3_NAME>
+     <R3_TEXT>Preço standard</R3_TEXT>
+     <R3_DATATYP>DEC</R3_DATATYP>
+     <R3_LENGTH>000013</R3_LENGTH>
+     <R3_DECIMAL>000002</R3_DECIMAL>
+     <R3_SEQNUM>000005</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ZPRICE_RESTRI</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ZPRICE_RESTRI</OBJ_NAME2>
+     <ID>&lt;element&gt; Zprice_restri &lt;type&gt; lines &lt;element&gt; lines &lt;type&gt; dtEstoqueSaldo http://trescoracoes.com.br/estoque/saldo http://trescoracoes.com.br/estoque/saldo</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>Zprice_restri</IFR_NAME>
+     <IFR_TEXT>Preço standard</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>decimal</IFR_XSDTYP>
+     <IFR_PREC>13</IFR_PREC>
+     <IFR_SCALE>2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ZPRICE_RESTRI</R3_NAME>
+     <R3_TEXT>Preço standard</R3_TEXT>
+     <R3_DATATYP>DEC</R3_DATATYP>
+     <R3_LENGTH>000013</R3_LENGTH>
+     <R3_DECIMAL>000002</R3_DECIMAL>
+     <R3_SEQNUM>000003</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ZPRICE_TRANS</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ZPRICE_TRANS</OBJ_NAME2>
+     <ID>&lt;element&gt; Zprice_trans &lt;type&gt; lines &lt;element&gt; lines &lt;type&gt; dtEstoqueSaldo http://trescoracoes.com.br/estoque/saldo http://trescoracoes.com.br/estoque/saldo</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>Zprice_trans</IFR_NAME>
+     <IFR_TEXT>Preço standard</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>decimal</IFR_XSDTYP>
+     <IFR_PREC>13</IFR_PREC>
+     <IFR_SCALE>2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ZPRICE_TRANS</R3_NAME>
+     <R3_TEXT>Preço standard</R3_TEXT>
+     <R3_DATATYP>DEC</R3_DATATYP>
+     <R3_LENGTH>000013</R3_LENGTH>
+     <R3_DECIMAL>000002</R3_DECIMAL>
+     <R3_SEQNUM>000004</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>ZCLPP_DT_ESTOQUE_SALDO_LINES</OBJ_NAME2>
+     <ID>&lt;type&gt; lines &lt;element&gt; lines &lt;type&gt; dtEstoqueSaldo http://trescoracoes.com.br/estoque/saldo http://trescoracoes.com.br/estoque/saldo</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>lines</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>ZCLPP_DT_ESTOQUE_SALDO_LINES</R3_NAME>
+     <R3_TEXT>Proxy Structure (generated)</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

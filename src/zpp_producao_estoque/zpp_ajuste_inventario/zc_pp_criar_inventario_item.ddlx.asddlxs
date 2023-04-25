@@ -1,0 +1,46 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    typeName: 'Item',
+    typeNamePlural: 'Itens',
+    title: {
+      type: #STANDARD,
+      value: 'Material' }
+  }
+}
+annotate view ZC_PP_CRIAR_INVENTARIO_ITEM with
+{
+  @UI.facet: [ { id:         'Item',
+               purpose:       #STANDARD,
+               type:          #IDENTIFICATION_REFERENCE,
+  //               label:         'Inventário',
+               position:      10 },
+             { id:            'Header',
+               purpose:       #STANDARD,
+               type:          #LINEITEM_REFERENCE,
+  //               label:         'Inventário - Itens',
+               position:      20,
+               targetElement: '_Header'}]
+
+  @UI: { lineItem:  [ { position: 10 } ], identification:  [ { position: 10 } ]  }
+  Material;
+  @UI: { lineItem:  [ { position: 20 } ], identification:  [ { position: 20 } ] }
+  Plant;
+  @UI: { lineItem:  [ { position: 30 } ], identification:  [ { position: 30 } ] }
+  StorageLocation;
+  @UI: { lineItem:  [ { position: 40 } ], identification:  [ { position: 40 } ] }
+  Batch;
+  @UI: { lineItem:  [ { position: 50 } ], identification:  [ { position: 50  } ] }
+  Quantity;
+  //      Unit,
+  @UI: { lineItem:  [ { position: 60, label: 'Contagem' } ], identification:  [ { position: 60, label: 'Contagem' } ] }
+  Counting;
+  @UI: { lineItem:  [ { position: 70, label: 'Saldo' } ], identification:  [ { position: 70, label: 'Saldo' } ] }
+  Balance;
+  @UI.lineItem: [{position: 80, criticality: 'StatusCriticality' }]
+  @UI.textArrangement: #TEXT_ONLY
+  @UI.dataPoint:{ title: 'Status', criticality: 'StatusCriticality' }
+  Status;
+  @UI.lineItem  :  [{position: 90 , type: #FOR_ACTION,  dataAction: 'mensagens', label: 'Log Mensagens'  }]
+  StatusCriticality;
+}

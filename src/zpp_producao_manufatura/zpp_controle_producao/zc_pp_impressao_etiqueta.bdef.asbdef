@@ -1,0 +1,6 @@
+projection;
+
+define behavior for ZC_PP_IMPRESSAO_ETIQUETA alias _Impressao
+{
+  use action Imprimir;
+}

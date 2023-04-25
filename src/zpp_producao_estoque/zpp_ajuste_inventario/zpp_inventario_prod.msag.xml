@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZPP_INVENTARIO_PROD</ARBGB>
+    <MASTERLANG>P</MASTERLANG>
+    <STEXT>Mensagens para inventário de produção</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPP_INVENTARIO_PROD</ARBGB>
+     <MSGNR>000</MSGNR>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPP_INVENTARIO_PROD</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Sem lançamentos para período e centro</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPP_INVENTARIO_PROD</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Data Início Seleção é posterior à Data Fim Seleção</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPP_INVENTARIO_PROD</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Já existe doc. &amp;1 para período e centro</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPP_INVENTARIO_PROD</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Quantidade de rateio insuficiente para o período.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>P</SPRSL>
+     <ARBGB>ZPP_INVENTARIO_PROD</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Nenhuma ordem encontrada para os movimentos parametrizados.</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,12 @@
+unmanaged; // implementation in class zbp_i_pp_receita_mestre unique;
+
+define behavior for ZI_PP_RECEITA_MESTRE //alias <alias_name>
+//persistent table <???>
+//lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+//  create;
+//  update;
+//  delete;
+}
