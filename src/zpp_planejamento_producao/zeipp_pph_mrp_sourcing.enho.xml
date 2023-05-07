@@ -12,7 +12,7 @@
      <IMPL_NAME>ZPP_PPH_MRP_SOURCING</IMPL_NAME>
      <IMPL_CLASS>ZCLPP_PPH_MRP_SOURCING</IMPL_CLASS>
      <ACTIVE>X</ACTIVE>
-     <IMPL_SHORTTEXT>Exemplo de implementação de BAdI para determinação de fonte de suprimento alternativa</IMPL_SHORTTEXT>
+     <IMPL_SHORTTEXT>BAdI Example Implementation for alternative Source Determination</IMPL_SHORTTEXT>
      <IMPL_SHORTTEXT_ID>40F2E93067D51ED5AA950961C9F14271</IMPL_SHORTTEXT_ID>
     </ENH_BADI_IMPL_DATA>
    </IMPL>

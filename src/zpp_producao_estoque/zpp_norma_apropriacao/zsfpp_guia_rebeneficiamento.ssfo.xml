@@ -3,7 +3,6 @@
  <sf:SMARTFORM xmlns:sf="urn:sap-com:SmartForms:2000:internal-structure" xmlns="urn:sap-com:sdixml-ifr:2000">
   <HEADER>
    <FORMNAME>ZSFPP_GUIA_REBENEFICIAMENTO</FORMNAME>
-   <CAPTION>Guia de rebeneficiamento</CAPTION>
    <MASTERLANG>P</MASTERLANG>
    <LANGVECTOR>*</LANGVECTOR>
    <DEVCLASS></DEVCLASS>
@@ -309,7 +308,6 @@
            <NAME>
             <INAME>PAGINA1</INAME>
            </NAME>
-           <CAPTION>Pagina 1</CAPTION>
            <NEXTPAGE>
             <INAME>PAGINA1</INAME>
            </NEXTPAGE>
@@ -336,7 +334,6 @@
               <NAME>
                <INAME>DADOS_GERAIS</INAME>
               </NAME>
-              <CAPTION>Info Dados gerais</CAPTION>
               <WTYPE>T</WTYPE>
               <T_CAPTION>
                <item>
@@ -359,7 +356,6 @@
                      <NAME>
                       <INAME>INFO_GUIA</INAME>
                      </NAME>
-                     <CAPTION>Info Guia</CAPTION>
                      <SECTTYPE>S</SECTTYPE>
                      <OTABTYPE>S</OTABTYPE>
                      <U_FHEIGHT>CM</U_FHEIGHT>
@@ -1204,14 +1200,7 @@
                         <NAME>
                          <INAME>LB_GUIA</INAME>
                         </NAME>
-                        <CAPTION>Guia</CAPTION>
                         <APPMODE>P</APPMODE>
-                        <TEXT>
-                         <item>
-                          <TDFORMAT>TC</TDFORMAT>
-                          <TDLINE>Guia de rebeneficiamento</TDLINE>
-                         </item>
-                        </TEXT>
                         <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                         <TEXT_AREA>
                          <ENABLED>F</ENABLED>
@@ -1325,7 +1314,6 @@
                         <NAME>
                          <INAME>TX_GUIA</INAME>
                         </NAME>
-                        <CAPTION>Guia</CAPTION>
                         <NOLANGUAGE>X</NOLANGUAGE>
                         <APPMODE>P</APPMODE>
                         <TEXT>
@@ -1436,14 +1424,7 @@
                         <NAME>
                          <INAME>LB_INICIO</INAME>
                         </NAME>
-                        <CAPTION>Inicio</CAPTION>
                         <APPMODE>P</APPMODE>
-                        <TEXT>
-                         <item>
-                          <TDFORMAT>TC</TDFORMAT>
-                          <TDLINE>Inicio</TDLINE>
-                         </item>
-                        </TEXT>
                         <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                         <TEXT_AREA>
                          <ENABLED>F</ENABLED>
@@ -1557,7 +1538,6 @@
                         <NAME>
                          <INAME>TX_DT_INICIO</INAME>
                         </NAME>
-                        <CAPTION>Dt inicio</CAPTION>
                         <NOLANGUAGE>X</NOLANGUAGE>
                         <APPMODE>P</APPMODE>
                         <TEXT>
@@ -1668,14 +1648,7 @@
                         <NAME>
                          <INAME>LB_CENTRO</INAME>
                         </NAME>
-                        <CAPTION>centro</CAPTION>
                         <APPMODE>P</APPMODE>
-                        <TEXT>
-                         <item>
-                          <TDFORMAT>TC</TDFORMAT>
-                          <TDLINE>Centro</TDLINE>
-                         </item>
-                        </TEXT>
                         <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                         <TEXT_AREA>
                          <ENABLED>F</ENABLED>
@@ -1789,7 +1762,6 @@
                         <NAME>
                          <INAME>TX_CENTRO</INAME>
                         </NAME>
-                        <CAPTION>Centro</CAPTION>
                         <NOLANGUAGE>X</NOLANGUAGE>
                         <APPMODE>P</APPMODE>
                         <TEXT>
@@ -1901,12 +1873,6 @@
                          <INAME>LB_FIM</INAME>
                         </NAME>
                         <APPMODE>P</APPMODE>
-                        <TEXT>
-                         <item>
-                          <TDFORMAT>TC</TDFORMAT>
-                          <TDLINE>Fim</TDLINE>
-                         </item>
-                        </TEXT>
                         <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                         <TEXT_AREA>
                          <ENABLED>F</ENABLED>
@@ -2129,12 +2095,6 @@
                          <INAME>LB_QTDE_GUIA</INAME>
                         </NAME>
                         <APPMODE>P</APPMODE>
-                        <TEXT>
-                         <item>
-                          <TDFORMAT>TC</TDFORMAT>
-                          <TDLINE>Quantidade da guia</TDLINE>
-                         </item>
-                        </TEXT>
                         <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                         <TEXT_AREA>
                          <ENABLED>F</ENABLED>
@@ -2449,7 +2409,6 @@
               <NAME>
                <INAME>MAIN</INAME>
               </NAME>
-              <CAPTION>Janela principal</CAPTION>
               <WTYPE>M</WTYPE>
               <T_CAPTION>
                <item>
@@ -2699,7 +2658,6 @@
                         <NAME>
                          <INAME>%EVENT13</INAME>
                         </NAME>
-                        <CAPTION>Área de cabeçalho</CAPTION>
                         <EVTYPE>H</EVTYPE>
                         <T_CAPTION>
                          <item>
@@ -2929,12 +2887,6 @@
                                   <INAME>L_INSTR</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>TC</TDFORMAT>
-                                   <TDLINE>Instruções</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -2982,7 +2934,6 @@
                         <NAME>
                          <INAME>%EVENT14</INAME>
                         </NAME>
-                        <CAPTION>Área principal</CAPTION>
                         <EVTYPE>B</EVTYPE>
                         <T_CAPTION>
                          <item>
@@ -3004,7 +2955,6 @@
                            <NAME>
                             <INAME>C_LINHA_INSTR</INAME>
                            </NAME>
-                           <CAPTION>centro</CAPTION>
                            <SECTTYPE>R</SECTTYPE>
                            <U_FHEIGHT>CM</U_FHEIGHT>
                            <PATTERN>
@@ -3257,7 +3207,6 @@
                         <NAME>
                          <INAME>%EVENT15</INAME>
                         </NAME>
-                        <CAPTION>Nota de rodapé</CAPTION>
                         <EVTYPE>F</EVTYPE>
                         <T_CAPTION>
                          <item>
@@ -3284,7 +3233,6 @@
                      <NAME>
                       <INAME>DESPEJO</INAME>
                      </NAME>
-                     <CAPTION>tabela despejo</CAPTION>
                      <SECTTYPE>C</SECTTYPE>
                      <DATATYPE>L</DATATYPE>
                      <TABNAME>GUIA_RECEB-DESPEJO</TABNAME>
@@ -3897,7 +3845,6 @@
                         <NAME>
                          <INAME>%EVENT1</INAME>
                         </NAME>
-                        <CAPTION>Área de cabeçalho</CAPTION>
                         <EVTYPE>H</EVTYPE>
                         <T_CAPTION>
                          <item>
@@ -4127,12 +4074,6 @@
                                   <INAME>L_DESPEJO</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>TC</TDFORMAT>
-                                   <TDLINE>Despejo</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -4385,12 +4326,6 @@
                                   <INAME>L_LOTE</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>TC</TDFORMAT>
-                                   <TDLINE>Lote</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -4536,12 +4471,6 @@
                                   <INAME>L_SAC</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>TC</TDFORMAT>
-                                   <TDLINE>Scs.</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -4687,12 +4616,6 @@
                                   <INAME>L_PESO</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>TC</TDFORMAT>
-                                   <TDLINE>Peso</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -4950,7 +4873,6 @@
                         <NAME>
                          <INAME>%EVENT2</INAME>
                         </NAME>
-                        <CAPTION>Área principal</CAPTION>
                         <EVTYPE>B</EVTYPE>
                         <T_CAPTION>
                          <item>
@@ -5499,7 +5421,6 @@
                               <NAME>
                                <INAME>C_LIVELIN1</INAME>
                               </NAME>
-                              <CAPTION>centro</CAPTION>
                               <SECTTYPE>E</SECTTYPE>
                               <U_FHEIGHT>CM</U_FHEIGHT>
                               <PATTERN>
@@ -5717,7 +5638,6 @@
                         <NAME>
                          <INAME>%EVENT3</INAME>
                         </NAME>
-                        <CAPTION>Nota de rodapé</CAPTION>
                         <EVTYPE>F</EVTYPE>
                         <T_CAPTION>
                          <item>
@@ -6254,7 +6174,6 @@
                         <NAME>
                          <INAME>%EVENT4</INAME>
                         </NAME>
-                        <CAPTION>Área de cabeçalho</CAPTION>
                         <EVTYPE>H</EVTYPE>
                         <T_CAPTION>
                          <item>
@@ -6376,7 +6295,6 @@
                            <NAME>
                             <INAME>%CONDITION15</INAME>
                            </NAME>
-                           <CAPTION>Nova alternativa 15</CAPTION>
                            <OCOND>
                             <HEADER>X</HEADER>
                            </OCOND>
@@ -6504,12 +6422,6 @@
                                   <INAME>L_RESULTADO</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>TC</TDFORMAT>
-                                   <TDLINE>Resultado</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -6762,12 +6674,6 @@
                                   <INAME>L_LOTE_RES</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>TC</TDFORMAT>
-                                   <TDLINE>Lote</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -6913,12 +6819,6 @@
                                   <INAME>L_SAC_RES</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>TC</TDFORMAT>
-                                   <TDLINE>Scs.</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -7064,12 +6964,6 @@
                                   <INAME>L_PESO_RES</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>TC</TDFORMAT>
-                                   <TDLINE>Peso</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -7215,12 +7109,6 @@
                                   <INAME>L_QUALIDADE_RES</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>TC</TDFORMAT>
-                                   <TDLINE>Qualidade</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -7268,7 +7156,6 @@
                         <NAME>
                          <INAME>%EVENT5</INAME>
                         </NAME>
-                        <CAPTION>Área principal</CAPTION>
                         <EVTYPE>B</EVTYPE>
                         <T_CAPTION>
                          <item>
@@ -7817,7 +7704,6 @@
                               <NAME>
                                <INAME>C_QUALID_LIN_RES</INAME>
                               </NAME>
-                              <CAPTION>centro</CAPTION>
                               <SECTTYPE>E</SECTTYPE>
                               <U_FHEIGHT>CM</U_FHEIGHT>
                               <PATTERN>
@@ -7966,7 +7852,6 @@
                         <NAME>
                          <INAME>%EVENT6</INAME>
                         </NAME>
-                        <CAPTION>Nota de rodapé</CAPTION>
                         <EVTYPE>F</EVTYPE>
                         <T_CAPTION>
                          <item>
@@ -9407,7 +9292,6 @@
                         <NAME>
                          <INAME>%EVENT7</INAME>
                         </NAME>
-                        <CAPTION>Área de cabeçalho</CAPTION>
                         <EVTYPE>H</EVTYPE>
                         <T_CAPTION>
                          <item>
@@ -9529,7 +9413,6 @@
                            <NAME>
                             <INAME>%CONDITION14</INAME>
                            </NAME>
-                           <CAPTION>Nova alternativa 14</CAPTION>
                            <OCOND>
                             <HEADER>X</HEADER>
                            </OCOND>
@@ -9657,12 +9540,6 @@
                                   <INAME>L_RESULTADO_PREV</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>TC</TDFORMAT>
-                                   <TDLINE>Resultado previsto</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -9710,7 +9587,6 @@
                         <NAME>
                          <INAME>%EVENT8</INAME>
                         </NAME>
-                        <CAPTION>Área principal</CAPTION>
                         <EVTYPE>B</EVTYPE>
                         <T_CAPTION>
                          <item>
@@ -9940,12 +9816,6 @@
                                   <INAME>L_P19</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>RL</TDFORMAT>
-                                   <TDLINE>Peneira 19</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -10091,12 +9961,6 @@
                                   <INAME>L_P18</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>RL</TDFORMAT>
-                                   <TDLINE>Peneira 18</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -10242,12 +10106,6 @@
                                   <INAME>L_P17</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>RL</TDFORMAT>
-                                   <TDLINE>Peneira 17</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -10393,12 +10251,6 @@
                                   <INAME>L_P16</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>RL</TDFORMAT>
-                                   <TDLINE>Peneira 16</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -10544,12 +10396,6 @@
                                   <INAME>L_P15</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>RL</TDFORMAT>
-                                   <TDLINE>Peneira 15</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -10695,12 +10541,6 @@
                                   <INAME>L_P14</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>RL</TDFORMAT>
-                                   <TDLINE>Peneira 14</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -10846,12 +10686,6 @@
                                   <INAME>L_P13</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>RL</TDFORMAT>
-                                   <TDLINE>Peneira 13</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -10997,12 +10831,6 @@
                                   <INAME>L_P12</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>RL</TDFORMAT>
-                                   <TDLINE>Peneira 12</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -11148,12 +10976,6 @@
                                   <INAME>L_P11</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>RL</TDFORMAT>
-                                   <TDLINE>Peneira 11</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -11299,12 +11121,6 @@
                                   <INAME>L_P10</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>RL</TDFORMAT>
-                                   <TDLINE>Peneira 10</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -13074,12 +12890,6 @@
                                   <INAME>L_IMPUREZAS</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>RL</TDFORMAT>
-                                   <TDLINE>Impurezas</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -13225,12 +13035,6 @@
                                   <INAME>L_FUNDO</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>RL</TDFORMAT>
-                                   <TDLINE>Fundo</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -13376,12 +13180,6 @@
                                   <INAME>L_CATACAO</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>RL</TDFORMAT>
-                                   <TDLINE>Catação</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -13527,12 +13325,6 @@
                                   <INAME>L_MK10</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>RL</TDFORMAT>
-                                   <TDLINE>MK10</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -14251,7 +14043,6 @@
                         <NAME>
                          <INAME>%EVENT9</INAME>
                         </NAME>
-                        <CAPTION>Nota de rodapé</CAPTION>
                         <EVTYPE>F</EVTYPE>
                         <T_CAPTION>
                          <item>
@@ -14888,7 +14679,6 @@
                         <NAME>
                          <INAME>%EVENT10</INAME>
                         </NAME>
-                        <CAPTION>Área de cabeçalho</CAPTION>
                         <EVTYPE>H</EVTYPE>
                         <T_CAPTION>
                          <item>
@@ -15118,12 +14908,6 @@
                                   <INAME>L_RES_OBTIDO</INAME>
                                  </NAME>
                                  <APPMODE>P</APPMODE>
-                                 <TEXT>
-                                  <item>
-                                   <TDFORMAT>TC</TDFORMAT>
-                                   <TDLINE>Resultado obtido</TDLINE>
-                                  </item>
-                                 </TEXT>
                                  <STYLE_NAME>ZSFPP_GUIAREC</STYLE_NAME>
                                  <TEXT_AREA>
                                   <ENABLED>F</ENABLED>
@@ -15171,7 +14955,6 @@
                         <NAME>
                          <INAME>%EVENT11</INAME>
                         </NAME>
-                        <CAPTION>Área principal</CAPTION>
                         <EVTYPE>B</EVTYPE>
                         <T_CAPTION>
                          <item>
@@ -15900,7 +15683,6 @@
                         <NAME>
                          <INAME>%EVENT12</INAME>
                         </NAME>
-                        <CAPTION>Nota de rodapé</CAPTION>
                         <EVTYPE>F</EVTYPE>
                         <T_CAPTION>
                          <item>
@@ -15929,7 +15711,6 @@
               <NAME>
                <INAME>%OUTATTRIB1</INAME>
               </NAME>
-              <CAPTION>Nova opção de saída</CAPTION>
               <U_WFRAME>PT</U_WFRAME>
               <U_WBOXV>CM</U_WBOXV>
               <U_WBOXH>CM</U_WBOXH>

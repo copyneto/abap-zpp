@@ -11,7 +11,6 @@
     <item>
      <FUNCNAME>ZFMPP_LANCA_CONT_ESTOQUE</FUNCNAME>
      <REMOTE_CALL>R</REMOTE_CALL>
-     <SHORT_TEXT>Executa rateio e lança contagem de estoque</SHORT_TEXT>
      <IMPORT>
       <RSIMP>
        <PARAMETER>IT_AJUST_INV_HEADER</PARAMETER>
@@ -32,17 +31,14 @@
       <RSFDO>
        <PARAMETER>IT_AJUST_INV_HEADER</PARAMETER>
        <KIND>P</KIND>
-       <STEXT>Ajuste de Inventário - Cabeçalho</STEXT>
       </RSFDO>
       <RSFDO>
        <PARAMETER>IT_AJUST_INV_ITEM</PARAMETER>
        <KIND>P</KIND>
-       <STEXT>Ajuste de Inventário - Item</STEXT>
       </RSFDO>
       <RSFDO>
        <PARAMETER>ET_AJUST_INV_MESSAGE</PARAMETER>
        <KIND>P</KIND>
-       <STEXT>Ajuste de Inventário - Mensagens</STEXT>
       </RSFDO>
      </DOCUMENTATION>
     </item>

@@ -11,7 +11,6 @@
     <item>
      <FUNCNAME>ZFMPP_NRM_APR_ENCERRAMENTO</FUNCNAME>
      <REMOTE_CALL>R</REMOTE_CALL>
-     <SHORT_TEXT>Norma de Apropriação-Encerramento</SHORT_TEXT>
      <IMPORT>
       <RSIMP>
        <PARAMETER>IV_DOC_UUID_H</PARAMETER>
@@ -28,7 +27,6 @@
     <item>
      <FUNCNAME>ZFMPP_NRM_APR_GRAOS_CONSUMIDOS</FUNCNAME>
      <REMOTE_CALL>R</REMOTE_CALL>
-     <SHORT_TEXT>Norma de Apropriação-Grãos Consumidos</SHORT_TEXT>
      <IMPORT>
       <RSIMP>
        <PARAMETER>IV_DOC_UUID_H</PARAMETER>
@@ -63,7 +61,6 @@
     <item>
      <FUNCNAME>ZFMPP_NRM_APR_PRODUCAO_GRAOS</FUNCNAME>
      <REMOTE_CALL>R</REMOTE_CALL>
-     <SHORT_TEXT>Norma de Apropriação-Produção de Grãos</SHORT_TEXT>
      <IMPORT>
       <RSIMP>
        <PARAMETER>IV_DOC_UUID_H</PARAMETER>

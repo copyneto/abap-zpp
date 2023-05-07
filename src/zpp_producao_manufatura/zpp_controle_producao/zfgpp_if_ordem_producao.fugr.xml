@@ -11,7 +11,6 @@
     <item>
      <FUNCNAME>ZFMPP_ATUALIZAR_USER_STATUS</FUNCNAME>
      <REMOTE_CALL>R</REMOTE_CALL>
-     <SHORT_TEXT>Atualizar o Status de Usuário</SHORT_TEXT>
      <IMPORT>
       <RSIMP>
        <PARAMETER>IV_OBJECT</PARAMETER>
@@ -36,7 +35,6 @@
     <item>
      <FUNCNAME>ZFMPP_IMPRIMIR_ETIQUETA</FUNCNAME>
      <REMOTE_CALL>R</REMOTE_CALL>
-     <SHORT_TEXT>Impressão da Etiqueta de Produção (Apontamento)</SHORT_TEXT>
      <IMPORT>
       <RSIMP>
        <PARAMETER>IV_WAIT</PARAMETER>
