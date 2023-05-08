@@ -6,6 +6,7 @@
     <METADATA>
      <NAME>ZUI_O2_PP_RECEITA_MESTRE</NAME>
      <TYPE>SRVB/SVB</TYPE>
+     <DESCRIPTION>Receita Mestre por Material</DESCRIPTION>
      <LINKS>
       <item>
        <HREF>/sap/bc/adt/businessservices/odatav2/ZUI_O2_PP_RECEITA_MESTRE</HREF>

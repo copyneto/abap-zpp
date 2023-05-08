@@ -4,6 +4,8 @@
   <asx:values>
    <DDLS>
     <DDLNAME>ZI_PP_ARQ_CARGA_PRODUCAO</DDLNAME>
+    <DDLANGUAGE>P</DDLANGUAGE>
+    <DDTEXT>Arquivos de Carga de Produção</DDTEXT>
     <SOURCE_TYPE>W</SOURCE_TYPE>
    </DDLS>
   </asx:values>

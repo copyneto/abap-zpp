@@ -4,6 +4,8 @@
   <asx:values>
    <DDLS>
     <DDLNAME>ZI_PP_MAT_ETIQUETA</DDLNAME>
+    <DDLANGUAGE>P</DDLANGUAGE>
+    <DDTEXT>View para materiais da etiqueta</DDTEXT>
     <SOURCE_TYPE>W</SOURCE_TYPE>
    </DDLS>
   </asx:values>

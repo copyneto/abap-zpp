@@ -7,7 +7,7 @@
     <TYPE>BDEF/BDO</TYPE>
     <DESCRIPTION>Behavior for ZI_PP_AJUSTE_INVENTARIO_HEADER</DESCRIPTION>
     <DESCRIPTION_TEXT_LIMIT>60</DESCRIPTION_TEXT_LIMIT>
-    <LANGUAGE>EN</LANGUAGE>
+    <LANGUAGE>PT</LANGUAGE>
     <LINKS>
      <item>
       <HREF>./zi_pp_ajuste_inventario_header/source/main</HREF>

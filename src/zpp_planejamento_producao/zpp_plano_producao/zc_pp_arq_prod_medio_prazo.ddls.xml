@@ -4,6 +4,8 @@
   <asx:values>
    <DDLS>
     <DDLNAME>ZC_PP_ARQ_PROD_MEDIO_PRAZO</DDLNAME>
+    <DDLANGUAGE>P</DDLANGUAGE>
+    <DDTEXT>Projeção - Conteúdo dos Arquivos de Produção de Médio Prazo</DDTEXT>
     <SOURCE_TYPE>P</SOURCE_TYPE>
    </DDLS>
   </asx:values>

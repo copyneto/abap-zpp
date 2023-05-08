@@ -4,6 +4,8 @@
   <asx:values>
    <DDLS>
     <DDLNAME>ZC_PP_CRIAR_INVENTARIO_ITEM</DDLNAME>
+    <DDLANGUAGE>P</DDLANGUAGE>
+    <DDTEXT>Projection view para Criação de Inventário-Item</DDTEXT>
     <SOURCE_TYPE>P</SOURCE_TYPE>
    </DDLS>
   </asx:values>

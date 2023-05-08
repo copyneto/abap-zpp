@@ -4,6 +4,8 @@
   <asx:values>
    <DDLS>
     <DDLNAME>ZI_PP_CRIAR_INVENTARIO_HEADER</DDLNAME>
+    <DDLANGUAGE>P</DDLANGUAGE>
+    <DDTEXT>CDS View para Ajuste de Inventário</DDTEXT>
     <SOURCE_TYPE>W</SOURCE_TYPE>
    </DDLS>
   </asx:values>

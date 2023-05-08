@@ -4,6 +4,8 @@
   <asx:values>
    <DDLS>
     <DDLNAME>ZC_PP_NRM_APR_ORD</DDLNAME>
+    <DDLANGUAGE>P</DDLANGUAGE>
+    <DDTEXT>Norma de Apropriação - Ordens</DDTEXT>
     <SOURCE_TYPE>P</SOURCE_TYPE>
    </DDLS>
   </asx:values>

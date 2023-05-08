@@ -6,6 +6,7 @@
     <METADATA>
      <NAME>ZUI_O2_NRM_APR</NAME>
      <TYPE>SRVB/SVB</TYPE>
+     <DESCRIPTION>Serviço oData V2 - Norma de Apropriação</DESCRIPTION>
      <LINKS>
       <item>
        <HREF>/sap/bc/adt/businessservices/odatav2/ZUI_O2_NRM_APR</HREF>

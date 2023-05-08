@@ -4,6 +4,8 @@
   <asx:values>
    <DDLS>
     <DDLNAME>ZC_PP_MATERIALBOM</DDLNAME>
+    <DDLANGUAGE>P</DDLANGUAGE>
+    <DDTEXT>ZC Material BOM</DDTEXT>
     <SOURCE_TYPE>W</SOURCE_TYPE>
    </DDLS>
   </asx:values>

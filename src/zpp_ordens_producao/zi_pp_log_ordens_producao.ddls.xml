@@ -4,6 +4,8 @@
   <asx:values>
    <DDLS>
     <DDLNAME>ZI_PP_LOG_ORDENS_PRODUCAO</DDLNAME>
+    <DDLANGUAGE>P</DDLANGUAGE>
+    <DDTEXT>Logs de Ordens de Produção</DDTEXT>
     <SOURCE_TYPE>W</SOURCE_TYPE>
    </DDLS>
   </asx:values>

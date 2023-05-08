@@ -6,6 +6,7 @@
     <METADATA>
      <NAME>ZUI_O2_IMPRESSAO_ETIQUETA</NAME>
      <TYPE>SRVB/SVB</TYPE>
+     <DESCRIPTION>Impressão da etiqueta de confirmação</DESCRIPTION>
      <LINKS>
       <item>
        <HREF>/sap/bc/adt/businessservices/odatav2/ZUI_O2_IMPRESSAO_ETIQUETA</HREF>

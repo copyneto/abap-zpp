@@ -6,6 +6,7 @@
     <METADATA>
      <NAME>ZUI_O2_PLANO_PRODUCAO</NAME>
      <TYPE>SRVB/SVB</TYPE>
+     <DESCRIPTION>Serviço OData V2 UI - Arquivos de Carga de Produção</DESCRIPTION>
      <LINKS>
       <item>
        <HREF>/sap/bc/adt/businessservices/odatav2/ZUI_O2_PLANO_PRODUCAO</HREF>
