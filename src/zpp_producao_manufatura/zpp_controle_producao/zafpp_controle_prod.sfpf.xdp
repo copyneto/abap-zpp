@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xfa generator="AdobeLiveCycleDesigner_V11.0.9.20210210.2.941426_SAP" APIVersion="3.6.21005.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2022-05-18T13:49:42Z" uuid="55784874-5d49-46de-bd95-1bfc62527f21">
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.9.20200713.2.939458_SAP" APIVersion="3.6.20190.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2023-05-10T19:02:58Z" uuid="55784874-5d49-46de-bd95-1bfc62527f21">
 <template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/3.0/">
    <?formServer defaultPDFRenderFormat acrobat9.1dynamic?>
    <subform layout="tb" locale="pt_BR" name="data" restoreState="auto">
       <pageSet>
          <pageArea id="Page1" name="Página1">
-            <contentArea h="60.495mm" w="98.433mm" x="3.174mm" y="41.315mm"/>
+            <contentArea h="60.495mm" w="103mm" x="3.174mm" y="41.315mm"/>
             <medium long="160mm" orientation="landscape" short="105mm" stock="custom"/>
-            <subform h="98.65mm" name="Subformulário1" w="159.997mm" x="0.001mm" y="3.175mm">
+            <subform h="98.65mm" name="Subformulário1" w="159.997mm" y="3.175mm">
                <bind match="none"/>
-               <field h="9.476mm" name="DTLANCAMENTO" w="40mm" x="15.874mm" y="73.546mm">
+               <field h="9.476mm" name="DTLANCAMENTO" w="40mm" x="19.049mm" y="73.546mm">
                   <ui>
                      <dateTimeEdit>
                         <border presence="hidden"/>
@@ -37,7 +37,7 @@
                   </desc>
                   <validate nullTest="error"/>
                </field>
-               <field h="6.463mm" name="MATERIAL" w="24.295mm" x="15.874mm" y="65.825mm">
+               <field h="6.463mm" name="MATERIAL" w="24.295mm" x="19.049mm" y="65.825mm">
                   <ui>
                      <textEdit>
                         <border presence="hidden"/>
@@ -62,7 +62,7 @@
                      <text name="Anotação do schema">Nº material para ordem</text>
                   </desc>
                </field>
-               <field h="5.458mm" name="DESCRICAO" w="52.395mm" x="40.168mm" y="65.825mm">
+               <field h="5.458mm" name="DESCRICAO" w="52.395mm" x="43.343mm" y="65.825mm">
                   <ui>
                      <textEdit>
                         <border presence="hidden"/>
@@ -80,7 +80,7 @@
                      <text name="Anotação do schema">Texto breve de material</text>
                   </desc>
                </field>
-               <field h="5.805mm" name="LOTE" w="31.75mm" x="15.874mm" y="70.825mm">
+               <field h="5.805mm" name="LOTE" w="31.75mm" x="19.049mm" y="70.825mm">
                   <ui>
                      <textEdit>
                         <border presence="hidden"/>
@@ -104,7 +104,7 @@
                      <text name="Anotação do schema">Número do lote</text>
                   </desc>
                </field>
-               <field h="5.458mm" name="DTPRODUCAO" w="27.61mm" x="47.624mm" y="70.825mm">
+               <field h="5.458mm" name="DTPRODUCAO" w="27.61mm" x="50.799mm" y="70.825mm">
                   <ui>
                      <dateTimeEdit>
                         <border presence="hidden"/>
@@ -131,7 +131,7 @@
                   </desc>
                   <validate nullTest="error"/>
                </field>
-               <field h="5.458mm" name="EXPIRYDATE" w="26.249mm" x="76.199mm" y="70.825mm">
+               <field h="5.458mm" name="EXPIRYDATE" w="26.249mm" x="79.374mm" y="70.825mm">
                   <ui>
                      <dateTimeEdit>
                         <border presence="hidden"/>
@@ -158,7 +158,7 @@
                   </desc>
                   <validate nullTest="error"/>
                </field>
-               <field h="5.458mm" name="HRLANCAMENTO" w="13.007mm" x="55.549mm" y="75.653mm">
+               <field h="5.458mm" name="HRLANCAMENTO" w="13.007mm" x="58.724mm" y="75.653mm">
                   <ui>
                      <dateTimeEdit>
                         <border presence="hidden"/>
@@ -179,7 +179,7 @@
                   </desc>
                   <validate nullTest="error"/>
                </field>
-               <field h="5.458mm" name="QUANTIDADECONV" w="13.045mm" x="68.549mm" y="75.653mm">
+               <field h="5.458mm" name="QUANTIDADECONV" w="13.045mm" x="71.724mm" y="75.653mm">
                   <ui>
                      <textEdit>
                         <border presence="hidden"/>
@@ -203,7 +203,7 @@
                      <text name="Anotação do schema">Área def.imprecisam., evtlm.utiliz.p/níveis Support Package</text>
                   </desc>
                </field>
-               <field h="5.458mm" name="UNIDADE" w="6.35mm" x="79.499mm" y="75.653mm">
+               <field h="5.458mm" name="UNIDADE" w="6.35mm" x="82.674mm" y="75.653mm">
                   <ui>
                      <textEdit>
                         <border presence="hidden"/>
@@ -221,7 +221,7 @@
                      <text name="Anotação do schema">Unidade de medida de confirmação</text>
                   </desc>
                </field>
-               <field h="5.83mm" name="CONFIRMACAOTEXTO" w="13.647mm" x="85.999mm" y="75.653mm">
+               <field h="5.83mm" name="CONFIRMACAOTEXTO" w="13.647mm" x="89.174mm" y="75.653mm">
                   <ui>
                      <textEdit>
                         <border presence="hidden"/>
@@ -245,7 +245,7 @@
                      </value>
                   </caption>
                </field>
-               <field h="6.351mm" hAlign="center" name="BARCODE2" rotate="90" w="22.595mm" x="0mm" y="86.095mm">
+               <field h="6.351mm" hAlign="center" name="BARCODE2" rotate="90" w="22.595mm" x="3.175mm" y="86.095mm">
                   <ui>
                      <barcode checksum="auto" dataLength="10" textLocation="none" type="code128" wideNarrowRatio="fixed"/>
                   </ui>
@@ -258,7 +258,7 @@
                      <text name="Anotação do schema">Char 20</text>
                   </desc>
                </field>
-               <field h="12.7mm" hAlign="center" name="BARCODE3" w="60.325mm" x="25.399mm" y="48.9mm">
+               <field h="12.7mm" hAlign="center" name="BARCODE3" w="60.325mm" x="28.574mm" y="48.9mm">
                   <ui>
                      <barcode checksum="auto" dataLength="0" textLocation="none" type="code128A" wideNarrowRatio="fixed"/>
                   </ui>
@@ -271,7 +271,7 @@
                      <text name="Anotação do schema">Campo de comprimento 18</text>
                   </desc>
                </field>
-               <field h="10.978mm" hAlign="center" name="BARCODE1" w="57.15mm" x="25.399mm" y="85.725mm">
+               <field h="10.978mm" hAlign="center" name="BARCODE1" w="57.15mm" x="28.574mm" y="85.725mm">
                   <ui>
                      <barcode checksum="auto" dataLength="60" textLocation="belowEmbedded" type="code128A" wideNarrowRatio="fixed"/>
                   </ui>
@@ -284,7 +284,7 @@
                      <text name="Anotação do schema">Caractere 100</text>
                   </desc>
                </field>
-               <field h="8.25mm" hAlign="center" name="BARCODE3" w="60.325mm" x="36.999mm" y="59.6mm">
+               <field h="8.25mm" hAlign="center" name="BARCODE3" w="60.325mm" x="40.174mm" y="59.6mm">
                   <ui>
                      <textEdit>
                         <border presence="hidden"/>
@@ -307,7 +307,7 @@
                      </value>
                   </caption>
                </field>
-               <field h="5.458mm" hAlign="center" name="BARCODE2" rotate="90" w="25.4mm" x="6.349mm" y="82.55mm">
+               <field h="5.458mm" hAlign="center" name="BARCODE2" rotate="90" w="25.4mm" x="9.524mm" y="82.55mm">
                   <ui>
                      <textEdit>
                         <border presence="hidden"/>
@@ -331,7 +331,7 @@
                   </caption>
                </field>
                <?templateDesigner expand 1?></subform>
-            <draw h="19mm" name="ImagemEstática1" w="19mm" x="3.175mm" y="41.275mm">
+            <draw h="19mm" name="ImagemEstática1" w="19mm" x="6.349mm" y="41.275mm">
                <value>
                   <image contentType="image/jpeg">/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsK
 CwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQU
@@ -949,7 +949,7 @@ AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP
                   <text name="embeddedHref">C:\Users\azzir\OneDrive\Imagens\logo 3 corações.jpg</text>
                </desc>
             </draw>
-            <draw h="8.055mm" name="Texto1" w="19.314mm" x="45mm" y="45.45mm">
+            <draw h="8.055mm" name="Texto1" w="19.314mm" x="48.174mm" y="45.45mm">
                <ui>
                   <textEdit/>
                </ui>
@@ -971,7 +971,6 @@ AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP
       <?templateDesigner expand 1?>
       <?renderCache.subset "72 Black" 0 0 ISO-8859-1 4 12 3 00040044006AAMU?>
       <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 120 32 00030012001D00270029002B002F00300031003200330035003700380039004400450046004700480049004C004F00500051005200550057006D006F /:DFHLMNOPRTUVabcdefilmnortãç?>
-      <?renderCache.subset "Arial monospaced for SAP" 1 0 ISO-8859-1 4 4 1 003AW?>
       <?renderCache.subset "Courier New" 0 0 ISO-8859-1 4 64 16 00100013001400150016001700180019001A001B001C002A002C003300360039-0123456789GIPSV?></subform>
    <?templateDesigner DefaultPreviewDynamic 1?>
    <?templateDesigner DefaultRunAt client?>
@@ -982,7 +981,9 @@ AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP
    <?acrobat JavaScript strictScoping?>
    <?templateDesigner Grid show:0, snap:1, units:1, color:ff8080, origin:(0,0), interval:(79375,79375), objsnap:0, guidesnap:1, pagecentersnap:0?>
    <?templateDesigner FormTargetVersion 30?>
-   <?templateDesigner Zoom 234?>
+   <?templateDesigner Zoom 140?>
+   <?templateDesigner SaveTaggedPDF 1?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 1?>
    <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:0, crosshairs:0?>
    <?templateDesigner Guidelines v:317500;h:793750?></template>
 <config xmlns="http://www.xfa.org/schema/xci/3.0/">
@@ -1180,7 +1181,7 @@ AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP
 <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c015 81.159809, 2016/09/10-01:42:48        ">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
-         <xmp:MetadataDate>2022-05-18T13:49:42Z</xmp:MetadataDate>
+         <xmp:MetadataDate>2023-05-10T19:02:58Z</xmp:MetadataDate>
          <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
          <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
          <xmpMM:DocumentID>uuid:55784874-5d49-46de-bd95-1bfc62527f21</xmpMM:DocumentID>
