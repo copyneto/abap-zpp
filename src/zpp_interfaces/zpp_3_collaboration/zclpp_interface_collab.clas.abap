@@ -425,13 +425,12 @@ CLASS ZCLPP_INTERFACE_COLLAB IMPLEMENTATION.
         AND     mat~materialtype  IN @ir_mtart
         AND     mat~materialgroup IN @ir_matkl
 * LSCHEPP - Ajustes GAP 058 - 15.08.2022 Fim
-        AND    (   m~labst     <> 0
-            OR     m~umlme     <> 0
-            OR     m~insme     <> 0
-            OR     m~speme     <> 0
-            OR     m~retme     <> 0
-            OR     m~einme     <> 0 )
-
+*        AND    (   m~labst     <> 0
+*            OR     m~umlme     <> 0
+*            OR     m~insme     <> 0
+*            OR     m~speme     <> 0
+*            OR     m~retme     <> 0
+*            OR     m~einme     <> 0 )
         INTO TABLE @DATA(lt_list).
 
         SELECT m~matnr,
