@@ -416,8 +416,11 @@ CLASS ZCLPP_INTERFACE_COLLAB IMPLEMENTATION.
         INNER JOIN i_materialtext AS t ON  t~material  = m~matnr
                                        AND t~language  = @sy-langu
         INNER JOIN i_material AS mat   ON  mat~material = m~matnr
-        INNER JOIN i_currentmatlpricebycostest AS c ON  c~material      = m~matnr
-                                                    AND c~valuationarea = m~werks
+
+        INNER JOIN zi_pp_mat_preco AS c ON  c~material      = m~matnr
+                                        AND c~valuationarea = m~werks
+*        INNER JOIN i_currentmatlpricebycostest AS c ON  c~material      = m~matnr
+*                                                    AND c~valuationarea = m~werks
         WHERE   m~matnr     IN @ir_matnr
         AND     m~werks     IN @ir_werks
 * LSCHEPP - Ajustes GAP 058 - 15.08.2022 Início
@@ -453,8 +456,11 @@ CLASS ZCLPP_INTERFACE_COLLAB IMPLEMENTATION.
                 INNER JOIN i_materialtext AS t ON  t~material  = m~matnr
                                                AND t~language  = @sy-langu
                 INNER JOIN i_material AS mat   ON  mat~material = m~matnr
-                INNER JOIN i_currentmatlpricebycostest AS c ON  c~material      = m~matnr
-                                                            AND c~valuationarea = m~werks
+
+                INNER JOIN zi_pp_mat_preco AS c ON  c~material      = m~matnr
+                                                AND c~valuationarea = m~werks
+*                INNER JOIN i_currentmatlpricebycostest AS c ON  c~material      = m~matnr
+*                                                            AND c~valuationarea = m~werks
                 WHERE   m~matnr     IN @ir_matnr
                 AND     m~werks     IN @ir_werks
                 AND     mat~materialtype  IN @ir_mtart
@@ -490,8 +496,12 @@ CLASS ZCLPP_INTERFACE_COLLAB IMPLEMENTATION.
         INNER JOIN i_materialtext AS t ON  t~material  = m~matnr
                                        AND t~language  = @sy-langu
         INNER JOIN i_material AS mat   ON  mat~material = m~matnr
-        INNER JOIN i_currentmatlpricebycostest AS c ON  c~material      = m~matnr
-                                                    AND c~valuationarea = m~werks
+
+        INNER JOIN zi_pp_mat_preco AS c ON  c~material      = m~matnr
+                                        AND c~valuationarea = m~werks
+
+*        INNER JOIN i_currentmatlpricebycostest AS c ON  c~material      = m~matnr
+*                                                    AND c~valuationarea = m~werks
         WHERE   m~matnr     IN @ir_matnr
         AND     m~werks     IN @ir_werks
         AND     mat~materialtype  IN @ir_mtart
