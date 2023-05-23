@@ -5,7 +5,7 @@
 @Search.searchable: true
 define root view entity ZC_PP_NRM_APR_H
   as projection on ZI_PP_NRM_APR_H
-  association [0..1] to ZI_CA_VH_PADEST as _Printer on _Printer.Printer = $projection.Printer
+ association [0..1] to ZI_CA_VH_PADEST as _Printer on _Printer.Printer = $projection.Printer
 {
   key DocUuidH,
       Documentno,

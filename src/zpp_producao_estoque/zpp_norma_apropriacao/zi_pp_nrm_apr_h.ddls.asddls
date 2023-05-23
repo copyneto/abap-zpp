@@ -64,7 +64,7 @@ define root view entity ZI_PP_NRM_APR_H
       'ZNRM_APR'                as LogObjectId,
       'PRD_GRAOS'               as LogObjectSubId,
 
-      cast( '' as abap.char(4)) as Printer,
+      cast( '' as abap.char(30)) as Printer,
       _Ordens,
       _Consumo
 

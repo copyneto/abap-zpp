@@ -21,7 +21,7 @@ etag master LastChangedAt
   determination atualizaEntidade on save { create; update; }
 
   action ( features : instance ) encerrar result [1] $self;
-  action ( features : instance ) imprimir parameter ZC_PP_NRM_APR_PRINTER;
+ action ( features : instance ) imprimir parameter ZC_PP_NRM_APR_PRINTER;
 
   mapping for ztpp_nrm_apr_h
   {

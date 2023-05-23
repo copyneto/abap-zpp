@@ -4,6 +4,6 @@
 define abstract entity ZC_PP_NRM_APR_PRINTER
 {
 
-  Printer : abap.char(4);
+  Printer : abap.char(30);
 
 }
